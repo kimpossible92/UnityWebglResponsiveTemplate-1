@@ -1,0 +1,1069 @@
+Using pre-set license
+Built from '2021.1/staging' branch; Version is '2021.1.28f1 (f3f9dc10f3dd) revision 15989212'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.685; Version 2009; 64bit' Language: 'ru' Physical Memory: 12286 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.1.28f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/Pain/Documents/Downloads/UnityWebglResponsiveTemplate
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+53650
+Successfully changed project path to: C:/Users/Pain/Documents/Downloads/UnityWebglResponsiveTemplate
+C:/Users/Pain/Documents/Downloads/UnityWebglResponsiveTemplate
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 140.13 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.1.28f1 (f3f9dc10f3dd)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.28f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Pain/Documents/Downloads/UnityWebglResponsiveTemplate/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon HD 6700 Series (ID=0x68ba)
+    Vendor:   ATI
+    VRAM:     1010 MB
+    Driver:   15.200.1062.1004
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.28f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.28f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.28f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56096
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.28f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.28f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003572 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 137.21 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.594 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3595ms)
+		BeginReloadAssembly (148ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (1098ms)
+			LoadAssemblies (145ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (380ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (70ms)
+			SetupLoadedEditorAssemblies (533ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (137ms)
+				BeforeProcessingInitializeOnLoad (3ms)
+				ProcessInitializeOnLoadAttributes (305ms)
+				ProcessInitializeOnLoadMethodAttributes (72ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.009619 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 144.46 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.724 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2726ms)
+		BeginReloadAssembly (350ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (2247ms)
+			LoadAssemblies (236ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (739ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (121ms)
+			SetupLoadedEditorAssemblies (954ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (145ms)
+				BeforeProcessingInitializeOnLoad (119ms)
+				ProcessInitializeOnLoadAttributes (644ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Toon/Basic Outline': fallback shader 'Toon/Basic' not found
+WARNING: Shader Unsupported: 'Toon/Basic Outline' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Toon/Basic Outline' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Shader 'Toon/Basic Outline': fallback shader 'Toon/Basic' not found
+WARNING: Shader Unsupported: 'Toon/Basic Outline' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Toon/Basic Outline' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 1.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2472 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 196.6 MB.
+System memory in use after: 196.7 MB.
+
+Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 2943.
+Total: 9.041900 ms (FindLiveObjects: 0.976700 ms CreateObjectMapping: 0.841900 ms MarkObjects: 6.875100 ms  DeleteObjects: 0.343600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/DemoBuiltInPipeline.unity
+  artifactKey: Guid(76877568c82786d43add6de01d0f57a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/DemoBuiltInPipeline.unity using Guid(76877568c82786d43add6de01d0f57a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '142856f9712029ed7142655bfe47aafc') in 0.034452 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000459 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets
+  artifactKey: Guid(6aca36d299cd8bf428f4a858e8dc6fae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets using Guid(6aca36d299cd8bf428f4a858e8dc6fae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '780c759f8aee030c2866135f69bd3fb8') in 0.006980 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000566 seconds.
+  path: Assets/AllIn1VfxToolkit
+  artifactKey: Guid(716d060a92c227640964542b98d1116f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit using Guid(716d060a92c227640964542b98d1116f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0bf4ffacc4d1a094f448116ac490340') in 0.004312 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/AllIn1VfxToolkit/AllIn1VfxAssmebly.asmdef
+  artifactKey: Guid(13a9354c55b60044abfc2fa6088e30dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/AllIn1VfxAssmebly.asmdef using Guid(13a9354c55b60044abfc2fa6088e30dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfb9d536439048fd078e119da1c1750e') in 0.051774 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000620 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo
+  artifactKey: Guid(76650cd9d1e2ade46903b2f6a13b4829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo using Guid(76650cd9d1e2ade46903b2f6a13b4829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd7656df7a24280767bc53834878e462') in 0.004013 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.478256 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs
+  artifactKey: Guid(84eacaf4a76231e4cabbc704d0d593f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs using Guid(84eacaf4a76231e4cabbc704d0d593f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4903ce114d37f795c1cbb0a264d6434d') in 0.003128 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.065670 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Air Column.prefab
+  artifactKey: Guid(da387ef9566fb3e4884431f6512b9795) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Air Column.prefab using Guid(da387ef9566fb3e4884431f6512b9795) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f2495857b77b30662f2d7949a531de9') in 0.467510 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000389 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Gun Bullet.prefab
+  artifactKey: Guid(0318a5d4e9f35b3499c3a51e7e053320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Gun Bullet.prefab using Guid(0318a5d4e9f35b3499c3a51e7e053320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec0e38f0e89d166e16afcf192a08758a') in 0.109019 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000452 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Fire Tornado.prefab
+  artifactKey: Guid(3e33a52d79be8d64d936e68cfa38b605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Fire Tornado.prefab using Guid(3e33a52d79be8d64d936e68cfa38b605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffc45045c66c1bf14c221cea9a4e1d17') in 0.387740 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000398 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Fire Impact.prefab
+  artifactKey: Guid(240c830bfe588ad4f9925288b65d7a18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Fire Impact.prefab using Guid(240c830bfe588ad4f9925288b65d7a18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a87012bba306c210943b18b07307dbbb') in 0.561354 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000408 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Gun Impact.prefab
+  artifactKey: Guid(4e25fca77bf9f0f4b810156a77203cb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Gun Impact.prefab using Guid(4e25fca77bf9f0f4b810156a77203cb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edbd8fc1e72690c723a6dad7608c3132') in 0.345532 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000465 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Beam Blue.prefab
+  artifactKey: Guid(e7c59611687a9b5488ef64b81974b83b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Beam Blue.prefab using Guid(e7c59611687a9b5488ef64b81974b83b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ca22a5122bee6f7a537d03e48034f20') in 0.790995 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000420 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Explosion Bomb.prefab
+  artifactKey: Guid(739d19610906a434a8d67ca770434aca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Explosion Bomb.prefab using Guid(739d19610906a434a8d67ca770434aca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49b9c8b1235fd7bc304bb031dc9fb46c') in 1.014446 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000388 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Fire Bullet.prefab
+  artifactKey: Guid(625a5893477f7b94da52aa0c2e1eb1d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Fire Bullet.prefab using Guid(625a5893477f7b94da52aa0c2e1eb1d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22f4ae0c726e4ccc35b01e83e3062871') in 0.330178 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000401 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Green Area.prefab
+  artifactKey: Guid(adcb95a05ba2b3040b161e3571a7ed69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Green Area.prefab using Guid(adcb95a05ba2b3040b161e3571a7ed69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c027f973348842d4b6544cb1d6fc637') in 0.409678 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000571 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Digital Proj Impact.prefab
+  artifactKey: Guid(357ca1f3c55d5aa46a0e1bea4f0109ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Digital Proj Impact.prefab using Guid(357ca1f3c55d5aa46a0e1bea4f0109ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '931b6d6acda8b37aac33306d97137509') in 0.294818 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000403 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Fire Trail.prefab
+  artifactKey: Guid(f571da8dcc95c394cbb7d759393a34a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Fire Trail.prefab using Guid(f571da8dcc95c394cbb7d759393a34a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '783695fa16040162d6eb5973e58d8bd7') in 0.032540 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000483 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Fire Muzzle Flash.prefab
+  artifactKey: Guid(44240b632ed6d3b49a31f2ef45dfc9cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Fire Muzzle Flash.prefab using Guid(44240b632ed6d3b49a31f2ef45dfc9cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5641fb8c73a481aa929d64098ea41496') in 0.149510 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000366 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Holly Aura.prefab
+  artifactKey: Guid(586feea8620dbf144a7df821bbc81ae6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Holly Aura.prefab using Guid(586feea8620dbf144a7df821bbc81ae6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c2b35716731ce7f64356beb1ce188bc') in 0.590748 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000401 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Blue Tornado.prefab
+  artifactKey: Guid(3460b1c923701c446bc35e5033bda952) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Blue Tornado.prefab using Guid(3460b1c923701c446bc35e5033bda952) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cb79043820bfc7d733d8d739b5eae98') in 0.356830 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000449 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Ghost Trail.prefab
+  artifactKey: Guid(d89a666f64ac5d34cbdf11feff621012) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Ghost Trail.prefab using Guid(d89a666f64ac5d34cbdf11feff621012) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4526b0d1f587831835863d78f63dc073') in 0.143373 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000414 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Ice Muzzle Flash.prefab
+  artifactKey: Guid(ea55588be86a46d469f4669d2afe8fae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Ice Muzzle Flash.prefab using Guid(ea55588be86a46d469f4669d2afe8fae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfafb72f4002e6f968345d6b705ffe78') in 0.046662 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000420 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Blue Area + Distort Sphere.prefab
+  artifactKey: Guid(8946e62d89e36e9449c8b9e92eba8fc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Blue Area + Distort Sphere.prefab using Guid(8946e62d89e36e9449c8b9e92eba8fc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a74573d53a6e88ef57e67bdc2885c9f8') in 0.291812 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000393 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Incinerate Spell.prefab
+  artifactKey: Guid(47f46edf5b4392c48ad75011d064daed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Incinerate Spell.prefab using Guid(47f46edf5b4392c48ad75011d064daed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b227104a18fe2dae2b4f9f2c1934b683') in 0.493156 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000380 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Ice Impact.prefab
+  artifactKey: Guid(9a10e7fa8b74dcb46829ad3dce4ef4da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Ice Impact.prefab using Guid(9a10e7fa8b74dcb46829ad3dce4ef4da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57ba67e7d911531d7f4d498fe3f6e59f') in 0.329136 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000429 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Lightning Strike.prefab
+  artifactKey: Guid(b202acbc71e0a8242a574cbd85ce4cc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Lightning Strike.prefab using Guid(b202acbc71e0a8242a574cbd85ce4cc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd34be8a5bce5ddd0757855ac0b5e078') in 0.134058 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000394 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Digital Projectile.prefab
+  artifactKey: Guid(76ff8ef44a10b794bb0f8ff177b9ca27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Digital Projectile.prefab using Guid(76ff8ef44a10b794bb0f8ff177b9ca27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7d39b909810df336e8b7eafd6af67c7') in 0.042449 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000556 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Green Portal.prefab
+  artifactKey: Guid(1835dbeede209484cb976155d1b75638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Green Portal.prefab using Guid(1835dbeede209484cb976155d1b75638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af32610b78b0bf09873cabc4f88783ff') in 0.149165 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000427 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Blue Impact.prefab
+  artifactKey: Guid(a0deec4ddb1966147a11772c5df7cda6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Blue Impact.prefab using Guid(a0deec4ddb1966147a11772c5df7cda6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '933c69aa3469dea6c5766c86aa64de03') in 0.390815 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000386 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Dark Magic Orb.prefab
+  artifactKey: Guid(da7de3026ee5b96448290b857b84082b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Dark Magic Orb.prefab using Guid(da7de3026ee5b96448290b857b84082b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd46fca279a6d15870561d2d4add87c1d') in 0.321520 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000394 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Evil Aura.prefab
+  artifactKey: Guid(4779b010dbd1403488ea49e9d17ffd85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Evil Aura.prefab using Guid(4779b010dbd1403488ea49e9d17ffd85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2a7047240bd9449445393acb1b75b73') in 0.266474 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000378 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Electricity.prefab
+  artifactKey: Guid(09c387cf0bd54034daad364798d579b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Electricity.prefab using Guid(09c387cf0bd54034daad364798d579b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ab29ba1fbff4afaeac7d4f4e1898610') in 0.108255 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000411 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Explosion Galaxy.prefab
+  artifactKey: Guid(85df402618e06014dbc12715d31c1f54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Explosion Galaxy.prefab using Guid(85df402618e06014dbc12715d31c1f54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a981d9e6bb6dab3cb9f4d572d92c9ba9') in 0.381073 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000419 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Fire Shield.prefab
+  artifactKey: Guid(24b86388d47215d4b98788fb02b3c8da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Fire Shield.prefab using Guid(24b86388d47215d4b98788fb02b3c8da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf473c7efaba315c8192eb81605f2534') in 0.633583 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000421 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Gun Muzzle Flash.prefab
+  artifactKey: Guid(09e753e00edbb714ebf549c2dd326f01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Gun Muzzle Flash.prefab using Guid(09e753e00edbb714ebf549c2dd326f01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9192bdbca58de1a57c0877f66b6e6e2') in 0.134478 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000372 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Blue Fire.prefab
+  artifactKey: Guid(76557be7663b50b4b9e3239617c76343) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Blue Fire.prefab using Guid(76557be7663b50b4b9e3239617c76343) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47a866aee9ade74b4368028045bfae0d') in 0.380130 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000446 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Digital Muzzle Flash.prefab
+  artifactKey: Guid(df2e711cc0744ce45819d3540feb0dc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Digital Muzzle Flash.prefab using Guid(df2e711cc0744ce45819d3540feb0dc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd11bf5f8bc1b71fdc55cf0abd230f06a') in 0.098845 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000383 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Ice Projectile.prefab
+  artifactKey: Guid(0ab20d89b262f8240999628a1403ecc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Ice Projectile.prefab using Guid(0ab20d89b262f8240999628a1403ecc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02bddf69745612a3fbe1cc7ef4f38bae') in 0.043291 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000387 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Blue Pixel Portal.prefab
+  artifactKey: Guid(825fa02a7f86dd74cb5fae9038304906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Prefabs/Blue Pixel Portal.prefab using Guid(825fa02a7f86dd74cb5fae9038304906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afe71382e67eb3c05a3d33cf047afe91') in 0.196982 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 29.966765 seconds.
+  path: Assets/Prefabs/Sphere 1.prefab
+  artifactKey: Guid(446f03d7f00728e4dbebfc090e8af57a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sphere 1.prefab using Guid(446f03d7f00728e4dbebfc090e8af57a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd99be6589ebb3a7f8c5532e8a61c0e80') in 0.048311 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.570775 seconds.
+  path: Assets/Scenes/ExampleScene.unity
+  artifactKey: Guid(4ded97c66a3f8224aae1fa2d9a2f19d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ExampleScene.unity using Guid(4ded97c66a3f8224aae1fa2d9a2f19d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '467b35b89bc0c129b3556ca18bd1b4f2') in 0.013530 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 45.679191 seconds.
+  path: Assets/NWH/Vehicle Physics 2/Effects/Lights/Prefabs/Circular Blinker.prefab
+  artifactKey: Guid(f36f572e82652c94f958f3f4cf0ac3ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NWH/Vehicle Physics 2/Effects/Lights/Prefabs/Circular Blinker.prefab using Guid(f36f572e82652c94f958f3f4cf0ac3ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56c98470b59cfadb396f3a8052a8276c') in 0.306519 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000393 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/CircularQuad4.mesh
+  artifactKey: Guid(30dbb795584b3804681ba4e7ea898781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/CircularQuad4.mesh using Guid(30dbb795584b3804681ba4e7ea898781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7585f136e35136f42d8e69584ee6e2f0') in 0.305057 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000484 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/CircularQuad2.mesh
+  artifactKey: Guid(74e3df98ab07b1643973feacde66b0d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/CircularQuad2.mesh using Guid(74e3df98ab07b1643973feacde66b0d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d2e3e302c288e0d9b9054daff739e55') in 0.020012 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001174 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/CircularQuadTwisted.mesh
+  artifactKey: Guid(7da760bc6dd4f4f42b924166a3e5444b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/CircularQuadTwisted.mesh using Guid(7da760bc6dd4f4f42b924166a3e5444b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1cc2d8980dc146a2fc7439404474a13') in 0.019854 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000458 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/CircularQuad.mesh
+  artifactKey: Guid(ae3e02bbc42e32b40a0391ca06025222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/CircularQuad.mesh using Guid(ae3e02bbc42e32b40a0391ca06025222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d74c6b5a4410f78a6a1567dd01d188d') in 0.021775 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000135 seconds.
+  path: Assets/NWH/Vehicle Physics 2/Effects/Lights/Prefabs/Circular Light.prefab
+  artifactKey: Guid(5fc0c8810fe5e424fb19455d28a99d39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NWH/Vehicle Physics 2/Effects/Lights/Prefabs/Circular Light.prefab using Guid(5fc0c8810fe5e424fb19455d28a99d39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acc9dc0c16cb27bacef6a612d4889c56') in 0.055394 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000461 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/CircularQuad3.mesh
+  artifactKey: Guid(51f680d82be259240bd90009c24090bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/CircularQuad3.mesh using Guid(51f680d82be259240bd90009c24090bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72dbe2eea868f85d85f5781e173cd57b') in 0.023756 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000563 seconds.
+  path: Assets/NWH/Vehicle Physics 2/Effects/Lights/Prefabs/Circular Rear Light.prefab
+  artifactKey: Guid(009d625cfcc5fca4e90c98f560aad161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NWH/Vehicle Physics 2/Effects/Lights/Prefabs/Circular Rear Light.prefab using Guid(009d625cfcc5fca4e90c98f560aad161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b10072dfe27f1be0b7a258322fffe74') in 0.020487 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000362 seconds.
+  path: Assets/NWH/Vehicle Physics 2/Effects/Lights/Prefabs/Circular Stop Light.prefab
+  artifactKey: Guid(4e24b28a0a017c54aab94d2e00201111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NWH/Vehicle Physics 2/Effects/Lights/Prefabs/Circular Stop Light.prefab using Guid(4e24b28a0a017c54aab94d2e00201111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '819b51a813ee3d71d5eaae0490d68f41') in 0.021955 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 67.580210 seconds.
+  path: Assets/GL_origin/box-obstacle/Cube.prefab
+  artifactKey: Guid(bb065ef672fe67e429404617969ba67d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GL_origin/box-obstacle/Cube.prefab using Guid(bb065ef672fe67e429404617969ba67d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a12ecd0d43b378e7e548f4b8105fa03') in 0.077709 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000417 seconds.
+  path: Assets/GL_origin/box-obstacle/Cube (3) Variant.prefab
+  artifactKey: Guid(3a9fe71c5b2076f42b54ae617265bf0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GL_origin/box-obstacle/Cube (3) Variant.prefab using Guid(3a9fe71c5b2076f42b54ae617265bf0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fef3dad82717feb5ce2e3578921ade6c') in 0.062572 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 52.987504 seconds.
+  path: Assets/MenuStart/untitled2 Variant.prefab
+  artifactKey: Guid(65c8a7fd99e7a5e41ab0a81cbb5fa12a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MenuStart/untitled2 Variant.prefab using Guid(65c8a7fd99e7a5e41ab0a81cbb5fa12a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44ea327e96ebce818ded4aa346678793') in 0.043465 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 28.650122 seconds.
+  path: Assets/AllIn1VfxToolkit/ParticlePresets
+  artifactKey: Guid(d0429df68ed42764d905f135f5e379da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/ParticlePresets using Guid(d0429df68ed42764d905f135f5e379da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e72da715dfa147e5591a4ba96fce936') in 0.004206 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.980926 seconds.
+  path: Assets/AllIn1VfxToolkit/ParticlePresets/Resources
+  artifactKey: Guid(4641b9774cc9dd44d859a6399993001d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/ParticlePresets/Resources using Guid(4641b9774cc9dd44d859a6399993001d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c3ecf25333baa81a9352db0b355e1c5') in 0.003428 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.046415 seconds.
+  path: Assets/AllIn1VfxToolkit/ParticlePresets/Resources/ConeBurstHelperPreset.asset
+  artifactKey: Guid(e9060c7d346630b43b4f935c96bf16de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/ParticlePresets/Resources/ConeBurstHelperPreset.asset using Guid(e9060c7d346630b43b4f935c96bf16de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c429316bbd1527a725888a86e2620d82') in 0.006895 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.007141 seconds.
+  path: Assets/AllIn1VfxToolkit/ParticlePresets/Resources/ConeBurstPsPreset.preset
+  artifactKey: Guid(800c76bd94a890245b7469fe93723a00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/ParticlePresets/Resources/ConeBurstPsPreset.preset using Guid(800c76bd94a890245b7469fe93723a00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b924fe7fe27474734ab9b1dbe6f78bde') in 0.383555 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000990 seconds.
+  path: Assets/AllIn1VfxToolkit/ParticlePresets/Resources/SingleCenterHelperPreset.asset
+  artifactKey: Guid(18b4731b18116e2448c53b7ec31b536b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/ParticlePresets/Resources/SingleCenterHelperPreset.asset using Guid(18b4731b18116e2448c53b7ec31b536b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3b6eff3c2106545d7612791e2ff622d') in 0.004847 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000412 seconds.
+  path: Assets/AllIn1VfxToolkit/ParticlePresets/Resources/ExplosionBurstHelperPreset.asset
+  artifactKey: Guid(b4681ff93e9b63144968368b9bb49e4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/ParticlePresets/Resources/ExplosionBurstHelperPreset.asset using Guid(b4681ff93e9b63144968368b9bb49e4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a80b8eda5f05fe7621fde0a8d8e7d294') in 0.004869 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002842 seconds.
+  path: Assets/AllIn1VfxToolkit/ParticlePresets/Resources/SingleCenterPsPreset.preset
+  artifactKey: Guid(63dc6528adfe2e94a9ada6e4be88ddbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/ParticlePresets/Resources/SingleCenterPsPreset.preset using Guid(63dc6528adfe2e94a9ada6e4be88ddbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ddaca020a62eb841e68eddcab4c48a7') in 0.390677 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000427 seconds.
+  path: Assets/AllIn1VfxToolkit/ParticlePresets/Resources/ExplosionPsPreset.preset
+  artifactKey: Guid(ae084e977d1449743b162f11f6f05a8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/ParticlePresets/Resources/ExplosionPsPreset.preset using Guid(ae084e977d1449743b162f11f6f05a8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '462f2e284eab40020613e6dfdda1b7ec') in 0.383886 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.673040 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Meshes
+  artifactKey: Guid(151267d66f83c014bbed18ec9cfdf3d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Meshes using Guid(151267d66f83c014bbed18ec9cfdf3d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2823d743673507d61a412975957b8211') in 0.003832 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.062092 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/Arc1.mesh
+  artifactKey: Guid(dc8b70072ff7dec4a98ee983bb20cb18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/Arc1.mesh using Guid(dc8b70072ff7dec4a98ee983bb20cb18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8dc26dcc3a55ef88229bd3eed201dba') in 0.016502 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000574 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/ArrowHead.mesh
+  artifactKey: Guid(0a74b1d5c55081041b9fed2cae8564b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/ArrowHead.mesh using Guid(0a74b1d5c55081041b9fed2cae8564b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ff4a1d591e34ba77eaa8b8d20d484b6') in 0.018841 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/BulletRound.mesh
+  artifactKey: Guid(4f8f43a08ac3cda49ae5ce4620202bae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/BulletRound.mesh using Guid(4f8f43a08ac3cda49ae5ce4620202bae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2861b2928042b8317d7f1f36559a306') in 0.019456 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000590 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/Cone1.mesh
+  artifactKey: Guid(007b4431975bbcf44b07e5418ea3fcfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/Cone1.mesh using Guid(007b4431975bbcf44b07e5418ea3fcfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '419c0498b9b3aff95685769d1e840112') in 0.017347 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/CastSpell10Deg.mesh
+  artifactKey: Guid(4317ba8756e758143b962919e8c53bb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/CastSpell10Deg.mesh using Guid(4317ba8756e758143b962919e8c53bb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3de987396d20eb6d373e5367e9bca935') in 0.085780 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000376 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/CastSpell75Deg.mesh
+  artifactKey: Guid(c0309e4034ae7884096aba4fd465889c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/CastSpell75Deg.mesh using Guid(c0309e4034ae7884096aba4fd465889c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '679d1d3467498aa795ca1f3a4947b69d') in 0.019053 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000401 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/Bullet.mesh
+  artifactKey: Guid(7b1531d101633734bb2d13d43be934a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/Bullet.mesh using Guid(7b1531d101633734bb2d13d43be934a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb98553331383e755d38c7eac797479e') in 0.021635 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/Base1.mesh
+  artifactKey: Guid(7cb1750e1b130fe42ad0006f78510b2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/Base1.mesh using Guid(7cb1750e1b130fe42ad0006f78510b2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '277043eeb2700bbca75314ff7a8d5b54') in 0.018406 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000395 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/Beam2.mesh
+  artifactKey: Guid(564fc11b3862d8643a65d90852a529fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/Beam2.mesh using Guid(564fc11b3862d8643a65d90852a529fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc1550dd0f68e9a6039578d80f1bdd09') in 0.023479 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000373 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/CastSpell360Deg.mesh
+  artifactKey: Guid(207b722457a6a65469424a07576903c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/CastSpell360Deg.mesh using Guid(207b722457a6a65469424a07576903c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02045d248f6e71fb059a2e8880870257') in 0.020508 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000417 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/BigWave.mesh
+  artifactKey: Guid(871470702fdff154ea856eebbe34985d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/BigWave.mesh using Guid(871470702fdff154ea856eebbe34985d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fc2f0734daa78ece0762b4d0b8a1d2f') in 0.019298 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000414 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/CastSpell20Deg.mesh
+  artifactKey: Guid(c772307d2c0db674d89c17139dd88f09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/CastSpell20Deg.mesh using Guid(c772307d2c0db674d89c17139dd88f09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55ec6f592cf19562af392dac446e95ee') in 0.020313 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000440 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/BulletVeryLong.mesh
+  artifactKey: Guid(e7d693d4398bc9c4ab2be2a8bacd0466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/BulletVeryLong.mesh using Guid(e7d693d4398bc9c4ab2be2a8bacd0466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3becbb3cc91abd4b471c6c718e4eb63b') in 0.021449 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000389 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/CastSpell45Deg.mesh
+  artifactKey: Guid(ed6c230917421ac44b51fab4a9f65004) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/CastSpell45Deg.mesh using Guid(ed6c230917421ac44b51fab4a9f65004) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48c41310a82eb9e776b1b1c596ffc23b') in 0.017005 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000417 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/CastSpell100Deg.mesh
+  artifactKey: Guid(fe1145441c7954443bb6695ebeaa34c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/CastSpell100Deg.mesh using Guid(fe1145441c7954443bb6695ebeaa34c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be070f607b05987c5703b2e552b27495') in 0.021135 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000396 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/Base3.mesh
+  artifactKey: Guid(20ba231603314ea4698bd5bddf00d8bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/Base3.mesh using Guid(20ba231603314ea4698bd5bddf00d8bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df4cb798720eb7d2b2e3815c1faa3a57') in 0.017376 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000410 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/Cone2.mesh
+  artifactKey: Guid(ab32ca07703dfed4586db11c7249d34c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/Cone2.mesh using Guid(ab32ca07703dfed4586db11c7249d34c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c32627fcd04fe1d9bcd5c76c56edef6') in 0.017924 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000432 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/BigWave3.mesh
+  artifactKey: Guid(7807b44d0d4d39e459464683bcbc1751) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/BigWave3.mesh using Guid(7807b44d0d4d39e459464683bcbc1751) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d8fd6490daf62df969f5d8398de1876') in 0.020654 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000397 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/Beam1.mesh
+  artifactKey: Guid(5a0cd61bbe95d9343ac0c317fa2dfdaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/Beam1.mesh using Guid(5a0cd61bbe95d9343ac0c317fa2dfdaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fea607f9c2ea805eecf5aa6ca4de5848') in 0.023701 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/BulletPointy.mesh
+  artifactKey: Guid(360d916b727617f4990c402187342fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/BulletPointy.mesh using Guid(360d916b727617f4990c402187342fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '548b31074dab4dd1dc7a1f976cc19070') in 0.016722 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000475 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/CastSpell60Deg.mesh
+  artifactKey: Guid(9cc79c8568589464aae8f8f25d373a1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/CastSpell60Deg.mesh using Guid(9cc79c8568589464aae8f8f25d373a1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '948b7dece89068ed5800ee2e14909a7e') in 0.017877 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000423 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/Bullet3.mesh
+  artifactKey: Guid(3891b049d381983479769bafa2c20189) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/Bullet3.mesh using Guid(3891b049d381983479769bafa2c20189) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4584b96f921e425846a13c1464d742f') in 0.020163 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000770 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/Base2.mesh
+  artifactKey: Guid(a333c5c425474ad468f96a2a616e247a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/Base2.mesh using Guid(a333c5c425474ad468f96a2a616e247a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e1ee0424e761a5e08b626d61a35928e') in 0.020028 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000369 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/BigWave2.mesh
+  artifactKey: Guid(9763ff5b625522a4a9f7a24b28c91023) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/BigWave2.mesh using Guid(9763ff5b625522a4a9f7a24b28c91023) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abc0afe61d82b0d631926156bb0c7ecc') in 0.019968 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000437 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/CastSpell25Deg.mesh
+  artifactKey: Guid(3597cac67aabdef438c23792e374d521) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/CastSpell25Deg.mesh using Guid(3597cac67aabdef438c23792e374d521) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3fa689f3dfcc97dc2156e3178525871') in 0.018645 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000387 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/Base4.mesh
+  artifactKey: Guid(3d519cd7e380864498d557a1a52bae4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/Base4.mesh using Guid(3d519cd7e380864498d557a1a52bae4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ca1be3540bf32c83eb62e5699e39728') in 0.020460 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001026 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/Bullet2.mesh
+  artifactKey: Guid(e7eb76e0b7feeda49aa7dc78ebbc3120) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/Bullet2.mesh using Guid(e7eb76e0b7feeda49aa7dc78ebbc3120) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0e62fad7bd9b312b3d3728cdbd6bb11') in 0.019995 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000397 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/CastSpell180Deg.mesh
+  artifactKey: Guid(4b57d2d8f8aae6049b1c1d1836999039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/CastSpell180Deg.mesh using Guid(4b57d2d8f8aae6049b1c1d1836999039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dd8e420ce8aef8edd5efffbb8c00df9') in 0.016417 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 71.621132 seconds.
+  path: Assets/MenuStart/GameObject.prefab
+  artifactKey: Guid(c15ef593a68f11340915014f9a29279f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MenuStart/GameObject.prefab using Guid(c15ef593a68f11340915014f9a29279f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37eed678c0f1fc3afd10f29c5668be0b') in 0.037657 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 977.639824 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Materials/ProjectileSparks.mat
+  artifactKey: Guid(c3b60bfd6c3e6504fa00ac4ef856d135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Materials/ProjectileSparks.mat using Guid(c3b60bfd6c3e6504fa00ac4ef856d135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c60b3a33a05542c3ae240dcd3741c6db') in 0.117723 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 183.109441 seconds.
+  path: Assets/GL_origin/Evil Aura Variant.prefab
+  artifactKey: Guid(4c5e987679dd1dc43bb19d5aba76ff5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GL_origin/Evil Aura Variant.prefab using Guid(4c5e987679dd1dc43bb19d5aba76ff5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e78dd0a7ce20460858bdba8d22d2103') in 0.059086 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.341951 seconds.
+  path: Assets/GL_origin/Evil Aura Variant.prefab
+  artifactKey: Guid(4c5e987679dd1dc43bb19d5aba76ff5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GL_origin/Evil Aura Variant.prefab using Guid(4c5e987679dd1dc43bb19d5aba76ff5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd758cda116f8560cf96103c87e1da31') in 0.055161 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.158111 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Materials/OrbSparkGlow.mat
+  artifactKey: Guid(803b2981fce29b54cbdc3a3d1b0f26f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Materials/OrbSparkGlow.mat using Guid(803b2981fce29b54cbdc3a3d1b0f26f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fd2ad96198ee7f30de94d060b5058c6') in 0.030394 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 44.009088 seconds.
+  path: Assets/GL_origin/Evil Aura Variant.prefab
+  artifactKey: Guid(4c5e987679dd1dc43bb19d5aba76ff5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GL_origin/Evil Aura Variant.prefab using Guid(4c5e987679dd1dc43bb19d5aba76ff5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b8c0b66c930dd26fe6a04c4bc63935a') in 0.059796 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 126.573129 seconds.
+  path: Assets/NWH/Vehicle Physics 2/GUI/Textures/AnalogGaugeNeedle.png
+  artifactKey: Guid(477e26665c166874fb6965d26860d586) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NWH/Vehicle Physics 2/GUI/Textures/AnalogGaugeNeedle.png using Guid(477e26665c166874fb6965d26860d586) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca1333f3f1e4ffa125da805dd0e8f545') in 0.177658 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000360 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Materials/GalaxyStars.mat
+  artifactKey: Guid(76b1cd22480cfbf479bfe784e528b484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Materials/GalaxyStars.mat using Guid(76b1cd22480cfbf479bfe784e528b484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cbd8b7a01c7f9a45f6af0e77b69ba99') in 0.036175 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000398 seconds.
+  path: Assets/MenuStart/GameObject.prefab
+  artifactKey: Guid(c15ef593a68f11340915014f9a29279f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MenuStart/GameObject.prefab using Guid(c15ef593a68f11340915014f9a29279f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b703e05ab2fea18c9ed134d7958ffbfd') in 0.041247 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000536 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Textures/Others/GalaxyBackground.png
+  artifactKey: Guid(d8272a3284e68304a90a760767eedd66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Textures/Others/GalaxyBackground.png using Guid(d8272a3284e68304a90a760767eedd66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7ca13ded6465ed5b8a0463193adb2b5') in 0.019077 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000456 seconds.
+  path: Assets/NWH/Vehicle Physics 2/GUI/Textures/AnalogGaugeNeedle2.png
+  artifactKey: Guid(e68da69447f55944fbd92347a5131a33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NWH/Vehicle Physics 2/GUI/Textures/AnalogGaugeNeedle2.png using Guid(e68da69447f55944fbd92347a5131a33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd30d19f9e064c413eb47e83e53c73e07') in 0.073593 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Materials/GalaxySmokeSide.mat
+  artifactKey: Guid(b1d8a540f784d4341b174f92f7353508) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Materials/GalaxySmokeSide.mat using Guid(b1d8a540f784d4341b174f92f7353508) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3bd89ff72161a77ca35af28b0b3a081') in 0.034054 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000429 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Materials/EmberSparksGalaxy.mat
+  artifactKey: Guid(56178e93b9d621c4895e4dd0d3f4bd76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Materials/EmberSparksGalaxy.mat using Guid(56178e93b9d621c4895e4dd0d3f4bd76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e682724a1f108a172e19e74588e47e7') in 0.038122 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001710 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Materials/GalaxyCharacter.mat
+  artifactKey: Guid(d1b75cb3c2a15b84bbc9afe5bc356d12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Materials/GalaxyCharacter.mat using Guid(d1b75cb3c2a15b84bbc9afe5bc356d12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3921c4bee700616cc43bad10ec237854') in 0.234476 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000392 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/EffectsScriptableObjects/Explosions Galaxy.asset
+  artifactKey: Guid(5273513a9f6311a4a9cc4c874ba563e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/EffectsScriptableObjects/Explosions Galaxy.asset using Guid(5273513a9f6311a4a9cc4c874ba563e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98c06b7d9a357dc98692b40a1203de75') in 0.023189 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000397 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Materials/GalaxySparksExpl.mat
+  artifactKey: Guid(cc9061e1cc774144fbb8d8c80c3d697a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Materials/GalaxySparksExpl.mat using Guid(cc9061e1cc774144fbb8d8c80c3d697a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37ab7a7fb6bc671d03ea6574069b00f5') in 0.033717 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000888 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Materials/GalaxySmokeTop.mat
+  artifactKey: Guid(b43be7d0fa5a17146929e6921937030c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Materials/GalaxySmokeTop.mat using Guid(b43be7d0fa5a17146929e6921937030c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03b597f451a0a6f374a259f16f2186cf') in 0.128257 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 55.859028 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/EffectsScriptableObjects/AuraEvil.asset
+  artifactKey: Guid(0ac2fbad66ef1314f8a9574a61c30148) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/EffectsScriptableObjects/AuraEvil.asset using Guid(0ac2fbad66ef1314f8a9574a61c30148) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09ab3ab2e7f6cf7a4a7672a353c7f46a') in 0.012011 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000480 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Materials/EvilCapsule.mat
+  artifactKey: Guid(e1deb47fbf800904b994b41d089442bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Materials/EvilCapsule.mat using Guid(e1deb47fbf800904b994b41d089442bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c839fb922f2a8d23dc4d39abfc0f3ea') in 0.035724 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000410 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Materials/SlashSmokeVenom.mat
+  artifactKey: Guid(21878cc67c6233543bcba7a288b4c47f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Demo/Materials/SlashSmokeVenom.mat using Guid(21878cc67c6233543bcba7a288b4c47f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a0b64ebe240f88b709d74d80524f180') in 0.116176 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000446 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/SphereVfx3.mesh
+  artifactKey: Guid(e7865e6b20724b44db0a93d171d40c26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/SphereVfx3.mesh using Guid(e7865e6b20724b44db0a93d171d40c26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '808c5cf4de01b8c4250d325b0228b22a') in 0.019748 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000431 seconds.
+  path: Assets/NWH/Vehicle Physics 2/Resources/NWH Vehicle Physics/Defaults/Sound/ReverseBeep.wav
+  artifactKey: Guid(473e09b34553fad49a16a4a476eef88b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NWH/Vehicle Physics 2/Resources/NWH Vehicle Physics/Defaults/Sound/ReverseBeep.wav using Guid(473e09b34553fad49a16a4a476eef88b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e44f3c329087be5dd36e4860bdec6e8f') in 0.074680 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000467 seconds.
+  path: Assets/NWH/Vehicle Physics 2/Sound/ReverseBeep/ReverseBeep.wav
+  artifactKey: Guid(67c87460807c5e24c8ab7a5df14f0236) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NWH/Vehicle Physics 2/Sound/ReverseBeep/ReverseBeep.wav using Guid(67c87460807c5e24c8ab7a5df14f0236) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adbcc98a3d9d4e25f35c1bf14f37bc2a') in 0.061670 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000408 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/SphereVfx.mesh
+  artifactKey: Guid(3f510b1f076476042aaa4437ddf07027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/SphereVfx.mesh using Guid(3f510b1f076476042aaa4437ddf07027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdfe4a01ee944c23a36bd13c6aa5f491') in 0.020614 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/SphereVfx2.mesh
+  artifactKey: Guid(3a8472ce4fa00cd44ad3138bd3c704ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllIn1VfxToolkit/Demo & Assets/Meshes/SphereVfx2.mesh using Guid(3a8472ce4fa00cd44ad3138bd3c704ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b52b0a507ea688a58b1bd2a90d0e7cc6') in 0.017175 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 170.216262 seconds.
+  path: Assets/NWH/Common/Scripts/Camera/CameraInsideVehicle.cs
+  artifactKey: Guid(b660c5d2e66c601438dc90ebb20d7357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NWH/Common/Scripts/Camera/CameraInsideVehicle.cs using Guid(b660c5d2e66c601438dc90ebb20d7357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '131f2d2608de003e50f032b33d377d7d') in 0.009632 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009104 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.54 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.452 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2453ms)
+		BeginReloadAssembly (294ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (19ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (89ms)
+		EndReloadAssembly (2026ms)
+			LoadAssemblies (234ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (754ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (88ms)
+			SetupLoadedEditorAssemblies (710ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (98ms)
+				ProcessInitializeOnLoadAttributes (566ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (32ms)
+Platform modules already initialized, skipping
+Shader 'Toon/Basic Outline': fallback shader 'Toon/Basic' not found
+WARNING: Shader Unsupported: 'Toon/Basic Outline' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Toon/Basic Outline' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Shader 'Toon/Basic Outline': fallback shader 'Toon/Basic' not found
+WARNING: Shader Unsupported: 'Toon/Basic Outline' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Toon/Basic Outline' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 1.73 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2431 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 202.2 MB.
+System memory in use after: 202.3 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3074.
+Total: 9.000500 ms (FindLiveObjects: 0.847900 ms CreateObjectMapping: 0.433600 ms MarkObjects: 7.342400 ms  DeleteObjects: 0.370800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009358 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.64 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.665 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2666ms)
+		BeginReloadAssembly (291ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (17ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (88ms)
+		EndReloadAssembly (2235ms)
+			LoadAssemblies (262ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (780ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (86ms)
+			SetupLoadedEditorAssemblies (873ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (96ms)
+				ProcessInitializeOnLoadAttributes (730ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (31ms)
+Platform modules already initialized, skipping
+Shader 'Toon/Basic Outline': fallback shader 'Toon/Basic' not found
+WARNING: Shader Unsupported: 'Toon/Basic Outline' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Toon/Basic Outline' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Shader 'Toon/Basic Outline': fallback shader 'Toon/Basic' not found
+WARNING: Shader Unsupported: 'Toon/Basic Outline' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Toon/Basic Outline' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 2.04 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2426 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 202.1 MB.
+System memory in use after: 202.1 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 3077.
+Total: 9.432300 ms (FindLiveObjects: 0.997000 ms CreateObjectMapping: 0.460500 ms MarkObjects: 7.648400 ms  DeleteObjects: 0.323100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010102 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.83 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.519 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2520ms)
+		BeginReloadAssembly (282ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (13ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (85ms)
+		EndReloadAssembly (2102ms)
+			LoadAssemblies (254ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (773ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (89ms)
+			SetupLoadedEditorAssemblies (745ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (97ms)
+				ProcessInitializeOnLoadAttributes (600ms)
+				ProcessInitializeOnLoadMethodAttributes (22ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (32ms)
+Platform modules already initialized, skipping
+Shader 'Toon/Basic Outline': fallback shader 'Toon/Basic' not found
+WARNING: Shader Unsupported: 'Toon/Basic Outline' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Toon/Basic Outline' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Shader 'Toon/Basic Outline': fallback shader 'Toon/Basic' not found
+WARNING: Shader Unsupported: 'Toon/Basic Outline' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Toon/Basic Outline' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 2.00 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2426 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 202.2 MB.
+System memory in use after: 202.3 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 3080.
+Total: 9.247000 ms (FindLiveObjects: 0.931200 ms CreateObjectMapping: 0.445900 ms MarkObjects: 7.498000 ms  DeleteObjects: 0.365800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 861.721106 seconds.
+  path: Assets/GL_origin/Evil Aura Variant.prefab
+  artifactKey: Guid(4c5e987679dd1dc43bb19d5aba76ff5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GL_origin/Evil Aura Variant.prefab using Guid(4c5e987679dd1dc43bb19d5aba76ff5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b9b973a19188f50ffa0974dd2c38327') in 0.169945 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.850362 seconds.
+  path: Assets/NWH/Common/Scripts/Camera/Editor/CameraInsideVehicleEditor.cs
+  artifactKey: Guid(a29b166984be42e8bab748a17f7dc606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NWH/Common/Scripts/Camera/Editor/CameraInsideVehicleEditor.cs using Guid(a29b166984be42e8bab748a17f7dc606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8caae211a27c34ea74973da3312a6f9e') in 0.003231 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
