@@ -1,14 +1,6 @@
 ﻿using Gameplay.ShipSystems;
 using Gameplay.Spaceships;
 using System.Collections.Generic;
-using NWH.NPhysics;
-using NWH.VehiclePhysics2.Effects;
-using NWH.VehiclePhysics2.Input;
-using NWH.VehiclePhysics2.Modules;
-using NWH.VehiclePhysics2.Powertrain;
-using NWH.VehiclePhysics2.Powertrain.Wheel;
-using NWH.VehiclePhysics2.Sound;
-using NWH.WheelController3D;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Serialization;
@@ -30,9 +22,9 @@ namespace Gameplay.ShipControllers
             _spaceship = spaceship;
         }
 
-        private void Start(){
-            // Calculate wheelbase if there are 2x2 wheels
-            //powertrain.Awake(this);
+        private void Start()
+        {
+            ProcessMove();
         }
         private void Update()
         {
@@ -41,6 +33,7 @@ namespace Gameplay.ShipControllers
             
         }
 
+        protected abstract void ProcessMove();
         protected abstract void ProcessHandling(MovementSystem movementSystem);
         protected abstract void ProcessFire(WeaponSystem fireSystem);
     }

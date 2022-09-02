@@ -1,13 +1,5 @@
 ﻿using Gameplay.ShipSystems;
 using System.Collections.Generic;
-using NWH.NPhysics;
-using NWH.VehiclePhysics2.Effects;
-using NWH.VehiclePhysics2.Input;
-using NWH.VehiclePhysics2.Modules;
-using NWH.VehiclePhysics2.Powertrain;
-using NWH.VehiclePhysics2.Powertrain.Wheel;
-using NWH.VehiclePhysics2.Sound;
-using NWH.WheelController3D;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Serialization;
@@ -32,6 +24,9 @@ namespace Gameplay.ShipControllers.CustomController
         private void Awake()
         {
             //powertrain.Awake(this);
+        }
+        protected override void ProcessMove() {
+            //StartCoroutine(startMove());
         }
         public void OnMove(InputAction.CallbackContext context)
         {

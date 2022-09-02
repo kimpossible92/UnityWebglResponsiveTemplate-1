@@ -39,8 +39,9 @@ namespace Gameplay.Weapons.Projectiles
         }
 
         
-        private void OnCollisionEnter2D(Collision2D other)
+        private void OnCollisionEnter(Collision other)
         {
+            if(other.gameObject.tag=="Airplane"){}
             var damagableObject = other.gameObject.GetComponent<IDamagable>();
             
             if (damagableObject != null 

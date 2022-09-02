@@ -96,6 +96,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -688,6 +689,31 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      enemy_ships_6: 21300012
+      enemy_ships_10: 21300020
+      enemy_ships_11: 21300022
+      enemy_ships_13: 21300026
+      enemy_ships_7: 21300014
+      enemy_ships_23: 21300046
+      enemy_ships_8: 21300016
+      enemy_ships_12: 21300024
+      enemy_ships_2: 21300004
+      enemy_ships_18: 21300036
+      enemy_ships_22: 21300044
+      enemy_ships_0: 21300000
+      enemy_ships_1: 21300002
+      enemy_ships_3: 21300006
+      enemy_ships_9: 21300018
+      enemy_ships_14: 21300028
+      enemy_ships_17: 21300034
+      enemy_ships_4: 21300008
+      enemy_ships_15: 21300030
+      enemy_ships_21: 21300042
+      enemy_ships_16: 21300032
+      enemy_ships_20: 21300040
+      enemy_ships_19: 21300038
+      enemy_ships_5: 21300010
   spritePackingTag: Spaceship
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

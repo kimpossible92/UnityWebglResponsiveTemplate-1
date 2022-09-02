@@ -53,7 +53,7 @@ public class CollShip : MonoBehaviour
     {
         pause = true;
         if (!visibleMenu) {
-            GetComponent<Rigidbody>().isKinematic = true;
+            //GetComponent<Rigidbody>().isKinematic = true;
             IsMenu = true;
             return; 
         }
@@ -61,7 +61,7 @@ public class CollShip : MonoBehaviour
     }
     public void setStart()
     {
-        GetComponent<Rigidbody>().isKinematic = false;
+        //GetComponent<Rigidbody>().isKinematic = true;
         IsMenu = false;
         CanvasMenu.SetActive(false);
         GetComponent<MeshRenderer>().enabled = false;
@@ -75,7 +75,7 @@ public class CollShip : MonoBehaviour
             //Application.LoadLevel("SampleScene"); 
             transform.position = startpos1;
             transform.rotation = Rotstart;
-            GetComponent<NWH.VehiclePhysics2.PlayerSpaceships2>().RotZero();
+            GetComponent<PlayerSpaceships2>().RotZero();
             foreach (var pi in FindObjectsOfType<Gameplay.Spawners.Spawner>())
             {
                 pi.StopSpawn();
