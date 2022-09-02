@@ -32,7 +32,12 @@ namespace Gameplay.ShipControllers
             ProcessFire(_spaceship.WeaponSystem);
             
         }
+        private void OnCollisionEnter(Collision collision) 
+        {
+            Collision1(collision);
+        }
 
+        protected abstract void Collision1(Collision collision);
         protected abstract void ProcessMove();
         protected abstract void ProcessHandling(MovementSystem movementSystem);
         protected abstract void ProcessFire(WeaponSystem fireSystem);

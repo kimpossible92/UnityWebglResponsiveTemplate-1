@@ -15,7 +15,7 @@ public class EnemyShipController : ShipController
     public CharacterController controller;
     public Rigidbody rb;
     public GameObject[] moveSpots;
-
+    private HealthHandler healthHandler;
 
     private float speed, dangerZone;
     private Enemy enemy = new Enemy(150f,195f,25f,1080f);
@@ -27,7 +27,9 @@ public class EnemyShipController : ShipController
     {
         anotherMovement = any;
     } 
-    protected override void ProcessMove() {
+    protected override void ProcessMove()
+    {
+        healthHandler = GetComponent<HealthHandler>();
         //StartCoroutine(startMove());
     }
     private void checkTerrainCollision() {
@@ -85,6 +87,18 @@ public class EnemyShipController : ShipController
         Vector3 moveTo = transform.forward * speed * Time.deltaTime;
         controller.Move(moveTo);
     }
+
+    protected override void Collision1(Collision collision)
+    {
+        Collider collider = collision.collider;
+        BaseFire fire = collider.GetComponent<BaseFire>();
+        if (fire != null && !fire.createdBy.CompareTag(gameObject.tag)) {
+            healthHandler.takdeDamage(fire.damage);
+        }
+        if (collider.CompareTag("Terrain")) {
+            healthHandler.takdeDamage(10f);
+        }
+    }
     protected override void ProcessHandling(MovementSystem movementSystem)
     {
         checkTerrainCollision();
@@ -115,6 +129,7 @@ public class EnemyShipController : ShipController
     private bool canAttack() {
         return Vector3.Distance(transform.position, GameObject.FindGameObjectWithTag("Airplane").transform.position) <= dangerZone;
     }
+    
     private IEnumerator FireDelay(float delay)
     {
         _fire = false;

@@ -25,6 +25,10 @@ namespace Gameplay.ShipControllers.CustomController
         {
             //powertrain.Awake(this);
         }
+        protected override void Collision1(Collision collision)
+        {
+        
+        }
         protected override void ProcessMove() {
             //StartCoroutine(startMove());
         }
