@@ -38,10 +38,10 @@ public class GameController : MonoBehaviour,GameplayView
             terrainObject = Instantiate(TerrainLoad.GetComponent<Terrain>(), Vector3.zero, Quaternion.identity) as Terrain;
         }
         airplaneObject = Instantiate(AirplaneLoad, airplaneStartPosition, Quaternion.identity) as GameObject;
-        airplaneObject.GetComponent<AirplaneManager>().setAirplane(airplane, currentSession.gameState);
+        airplaneObject.GetComponent<AirManager>().setAirplane(airplane, currentSession.gameState);
         pushDifficulty((Difficulty) currentSession.gameState.difficultyLevel);
         airplaneDeadObserver = (airplane) => {
-            AirplaneScore airplaneScore = airplaneObject.GetComponent<AirplaneScore>();
+            AirScore airplaneScore = airplaneObject.GetComponent<AirScore>();
             stateToSave = new GameState(0f, currentSession.gameState.difficultyLevel, airplaneScore.coins, airplaneScore.score);
             presenter.update(stateToSave.score, stateToSave.coins);
         };
@@ -57,7 +57,7 @@ public class GameController : MonoBehaviour,GameplayView
     }
     public void saveGame() {
         Session getSession() {
-            AirplaneManager airplaneManager = airplaneObject.GetComponent<AirplaneManager>();
+            AirManager airplaneManager = airplaneObject.GetComponent<AirManager>();
             if (airplaneManager != null) {
                 float health = airplaneManager.getCurrentHealth();
                 int score = airplaneManager.getCurrentScore();
@@ -71,12 +71,12 @@ public class GameController : MonoBehaviour,GameplayView
     }
 
     public void quitGame() {
-        SceneManager.LoadScene("MainMenuScene");
+        
     }
     private void changeDifficulty() {
         if (airplaneObject == null)
             return;
-        int score = airplaneObject.GetComponent<AirplaneScore>().score;
+        int score = airplaneObject.GetComponent<AirScore>().score;
         EventBus<DifficultyChangedEvent>.getInstance().publish(new DifficultyChangedEvent(DifficultyFactory.getDifficulty(score)));
     }
     // Called from presenter

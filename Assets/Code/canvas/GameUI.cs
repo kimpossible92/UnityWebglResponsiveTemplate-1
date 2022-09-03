@@ -7,7 +7,7 @@ public class GameUI : MonoBehaviour {
     public Text scoreText;
     public Slider healthBar;
 
-    private AirplaneScore airplaneScore;
+    private AirScore airplaneScore;
     private HealthHandler airplaneHealth;
 
     void Start() {
@@ -16,7 +16,7 @@ public class GameUI : MonoBehaviour {
 
     void Update() {
         if (airplaneScore == null) {
-            airplaneScore = FindObjectOfType<AirplaneScore>();
+            airplaneScore = FindObjectOfType<AirScore>();
             return;
         }
         if (airplaneHealth == null) {

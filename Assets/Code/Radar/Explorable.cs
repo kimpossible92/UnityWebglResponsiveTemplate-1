@@ -7,6 +7,7 @@ public class Explorable : MonoBehaviour {
 
     public Image image;
     void Start() {
+        //if (tag == "enemy") { print("register"); }
         Radar.getInstance().registerRadarObject(this.gameObject, image);
     }
 

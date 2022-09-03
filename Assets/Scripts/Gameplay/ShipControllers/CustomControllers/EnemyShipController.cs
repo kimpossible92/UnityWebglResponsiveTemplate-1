@@ -18,7 +18,7 @@ public class EnemyShipController : ShipController
     private HealthHandler healthHandler;
 
     private float speed, dangerZone;
-    private Enemy enemy = new Enemy(150f,195f,25f,1080f);
+    private Enemy enemy = new Enemy(150f,85f,25f,1080f);
     [SerializeField] private Attack _attack;
     private int targetSpot = -1;
     private bool _fire = true;
@@ -63,9 +63,13 @@ public class EnemyShipController : ShipController
         }
     }
     private void chaseTheFighter(float speed) {
-        transform.LookAt(GameObject.FindGameObjectWithTag("Airplane").transform.position);
-        Vector3 Moveto = transform.forward * speed * Time.deltaTime;
-        controller.Move(Moveto);//print("move2"+dangerZone);
+        float turn = 20f;
+        rb.velocity = transform.forward * speed;
+        var rocketTargetRotation = Quaternion.LookRotation(GameObject.FindGameObjectWithTag("Airplane").transform.position - transform.position);
+        rb.MoveRotation(Quaternion.RotateTowards(transform.rotation, rocketTargetRotation, turn));
+        //transform.LookAt(GameObject.FindGameObjectWithTag("Airplane").transform.position);
+        //Vector3 Moveto = transform.forward * speed * Time.deltaTime;
+        //controller.Move(Moveto);//print("move2"+dangerZone);
     }
 
     private void patrolMove() {
