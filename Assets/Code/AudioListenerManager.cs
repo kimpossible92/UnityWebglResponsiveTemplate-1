@@ -18,8 +18,7 @@ public class AudioListenerManager : MonoBehaviour {
     void Update()
     {
         if (audioListener == null) return;
-        bool isPaused = PauseManager.isPaused;
-        if(AudioS!=null)AudioS.enabled = !isPaused;
+        bool isPaused = PauseManager.isPaused; //if(AudioS!=null)AudioS.enabled = !isPaused;
 
     }
 }
