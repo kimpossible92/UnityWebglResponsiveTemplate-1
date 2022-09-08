@@ -3,7 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AirMove : MonoBehaviour {
+public class AirMove : AirPlane
+{
 
     public CharacterController controller;
 
@@ -26,35 +27,13 @@ public class AirMove : MonoBehaviour {
     [SerializeField] private GameObject Cube;
     [SerializeField]
     private Vector2 _shieldDelay;
-    void Start()
-    {
-        Cube.gameObject.SetActive(false);
-    }
+    //void Start(){ Cube.gameObject.SetActive(false);}
     private IEnumerator FireDelay(float delay)
     {
         _shield = false;
         yield return new WaitForSeconds(delay);
         Cube.gameObject.SetActive(false);
         _shield = true;
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        if (basicAttack != null)
-        {
-            if (Input.GetKey(KeyCode.Mouse0)){basicAttack.attack();}
-        }
-
-        if (specialAttack != null)
-        {
-            //if (Input.GetKeyDown(KeyCode.Mouse0)){ specialAttack.attack();}
-        }
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            if (!_shield) return;
-            Cube.gameObject.SetActive(true);
-            StartCoroutine(FireDelay(Random.Range(_shieldDelay.x, _shieldDelay.y)));
-        }
     }
 
     public void setDamage(float basicDamage, float specialDamage)
@@ -100,13 +79,11 @@ public class AirMove : MonoBehaviour {
         }
     }
 
-    void FixedUpdate() {
-        applayForwardMovement();
-
-        handleRotatoin();
-
-        handleBoost();
-    }
+    //void FixedUpdate() {
+    //    applayForwardMovement();
+    //    handleRotatoin();
+    //    handleBoost();
+    //}
 
     public void setSpeedValues(float airplaneSpeed, float minSpeed, float maxSpeed) {
         this.airplaneSpeed = airplaneSpeed;
@@ -114,4 +91,34 @@ public class AirMove : MonoBehaviour {
         this.maxSpeed = maxSpeed;
     }
 
+    protected override void ProcessStart()
+    {
+        Cube.gameObject.SetActive(false);
+    }
+
+    protected override void ProcessAttack()
+    {
+        if (basicAttack != null)
+        {
+            if (Input.GetKey(KeyCode.Mouse0)) { basicAttack.attack(); }
+        }
+
+        if (specialAttack != null)
+        {
+            //if (Input.GetKeyDown(KeyCode.Mouse0)){ specialAttack.attack();}
+        }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (!_shield) return;
+            Cube.gameObject.SetActive(true);
+            StartCoroutine(FireDelay(Random.Range(_shieldDelay.x, _shieldDelay.y)));
+        }
+    }
+
+    protected override void ProcessHandle()
+    {
+        applayForwardMovement();
+        handleRotatoin();
+        handleBoost();
+    }
 }

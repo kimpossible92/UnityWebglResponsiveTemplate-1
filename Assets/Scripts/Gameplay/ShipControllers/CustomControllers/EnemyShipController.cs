@@ -63,13 +63,14 @@ public class EnemyShipController : ShipController
         }
     }
     private void chaseTheFighter(float speed) {
-        float turn = 20f;
-        rb.velocity = transform.forward * speed;
-        var rocketTargetRotation = Quaternion.LookRotation(GameObject.FindGameObjectWithTag("Airplane").transform.position - transform.position);
-        rb.MoveRotation(Quaternion.RotateTowards(transform.rotation, rocketTargetRotation, turn));
-        //transform.LookAt(GameObject.FindGameObjectWithTag("Airplane").transform.position);
-        //Vector3 Moveto = transform.forward * speed * Time.deltaTime;
-        //controller.Move(Moveto);//print("move2"+dangerZone);
+        //float turn = 20f;
+        //rb.velocity = transform.forward * speed;
+        //var rocketTargetRotation = Quaternion.LookRotation(GameObject.FindGameObjectWithTag("Airplane").transform.position - transform.position);
+        //Quaternion.RotateTowards(transform.rotation, rocketTargetRotation, turn);
+        //rb.MovePosition(GameObject.FindGameObjectWithTag("Airplane").transform.position);
+        transform.LookAt(GameObject.FindGameObjectWithTag("Airplane").transform.position);
+        Vector3 Moveto = transform.forward * speed * Time.deltaTime;
+        controller.Move(Moveto);//print("move2"+dangerZone);
     }
 
     private void patrolMove() {
@@ -117,8 +118,8 @@ public class EnemyShipController : ShipController
         }
         if (moveSpots == null || moveSpots.Length == 0)
             moveSpots = GameObject.FindGameObjectsWithTag("EnemyMoveSpot");
-        speed = enemy != null ? enemy.speed : 0f;
-        dangerZone = enemy != null ? enemy.dangerZone : 0f;
+        speed = 85f;
+        dangerZone = 1080f;
     }
     protected override void ProcessFire(WeaponSystem fireSystem)
     {
