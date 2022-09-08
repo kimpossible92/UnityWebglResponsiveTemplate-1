@@ -3,9 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PauseManager : MonoBehaviour {
+public class Pausestart : MonoBehaviour {
 
-    private static PauseManager instance;
+    private static Pausestart instance;
 
     public static bool isPaused { private set; get; } = false;
 

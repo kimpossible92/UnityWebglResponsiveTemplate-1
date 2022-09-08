@@ -84,7 +84,7 @@ public class AirManager : MonoBehaviour {
 
     private void initAirplane() {
         GetComponent<AirMove>().setSpeedValues(airplaneAttributes.speed, airplaneAttributes.minSpeed, airplaneAttributes.maxSpeed);
-        GetComponent<AirAttack>().setDamage(airplaneAttributes.basicDamage, airplaneAttributes.specialDamage);
+        GetComponent<AirMove>().setDamage(airplaneAttributes.basicDamage, airplaneAttributes.specialDamage);
         GetComponent<AirScore>().setData(gameState.score, gameState.coins);
         healthHandler.setHealth(airplaneAttributes.maxHealth, gameState.health);
         healthHandler.onDead = () => {
@@ -99,7 +99,7 @@ public class AirManager : MonoBehaviour {
         initAirplane();
     }
 
-    // Called from GameController
+    // Called from Gamestart
     public void setAirplane(Airplane airplane, GameState gameState) {
         this.airplane = airplane;
         this.airplaneAttributes = airplane.attributes;
@@ -117,7 +117,7 @@ public class AirManager : MonoBehaviour {
     }
 
     private void OnCollisionEnter(Collision collision) {
-        if (!GetComponent<AirAttack>().Shiled()) return;
+        if (!GetComponent<AirMove>().Shiled()) return;
         Collider collider = collision.collider;
         BaseFire fire = collider.GetComponent<BaseFire>();
         if (fire != null && !fire.createdBy.CompareTag(gameObject.tag)) {

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameController : MonoBehaviour,GameplayView
+public class Gamestart : MonoBehaviour,GameplayView
 {
     [SerializeField]private GameObject TerrainLoad, AirplaneLoad;
     private GameplayPresenter presenter;

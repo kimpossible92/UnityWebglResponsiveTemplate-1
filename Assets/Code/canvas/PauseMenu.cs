@@ -14,7 +14,7 @@ public class PauseMenu : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         if (pauseMenuPanel != null) {
-            bool isPaused = PauseManager.isPaused;
+            bool isPaused = Pausestart.isPaused;
             if (isPaused != pauseMenuPanel.activeInHierarchy) {
                 pauseMenuPanel.SetActive(isPaused);
             }

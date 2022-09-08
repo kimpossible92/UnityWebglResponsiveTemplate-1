@@ -46,7 +46,7 @@ abstract public class Attack : MonoBehaviour {
     }
 
     public void attack() {
-        if (!PauseManager.isPaused) makeAttack();
+        if (!Pausestart.isPaused) makeAttack();
     }
 
     abstract protected void makeAttack();
