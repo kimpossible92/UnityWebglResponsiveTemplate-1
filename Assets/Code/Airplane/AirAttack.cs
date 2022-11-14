@@ -25,13 +25,13 @@ public class AirAttack : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         if (basicAttack != null) {
-            if (Input.GetKey(InputManager.geyKey(Key.BASIC_FIRE))) {
+            if (Input.GetKey(KeyCode.Mouse1)) {
                 basicAttack.attack();
             }
         }
 
         if (specialAttack != null) {
-            if (Input.GetKeyDown(InputManager.geyKey(Key.SPECIAL_FIRE))) {
+            if (Input.GetKeyDown(KeyCode.Mouse0)) {
                 specialAttack.attack();
             }
         }

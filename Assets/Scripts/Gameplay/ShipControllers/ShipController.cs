@@ -25,16 +25,23 @@ namespace Gameplay.ShipControllers
         private void Start()
         {
             ProcessMove();
+            destTime = 0;
         }
+        float destTime = 0;
         private void Update()
         {
             ProcessHandling(_spaceship.MovementSystem);
             ProcessFire(_spaceship.WeaponSystem);
-            
+            if (tag == "bonus") 
+            {
+                destTime += Time.deltaTime;
+                //print(destTime);
+                if (destTime >= 6.5f) { print("destroy"); Destroy(this.gameObject); destTime = 0; }
+            }
         }
         private void OnCollisionEnter(Collision collision) 
         {
-            Collision1(collision);
+            //Collision1(collision);
         }
 
         protected abstract void Collision1(Collision collision);

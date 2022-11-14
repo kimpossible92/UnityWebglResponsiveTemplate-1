@@ -13,13 +13,15 @@ public class Pausestart : MonoBehaviour {
         instance = this;
     }
 
-    void Start() {
+    void Start()
+    {
+        pause();
         Cursor.visible = isPaused;
     }
 
     // Update is called once per frame
     void Update() {
-        if (Input.GetKeyDown(InputManager.geyKey(Key.PAUSE))) {
+        if (Input.GetKeyDown(KeyCode.Escape)) {
             isPaused = !isPaused;
             if (isPaused) {
                 pause();
@@ -35,10 +37,12 @@ public class Pausestart : MonoBehaviour {
         Time.timeScale = 0f;
     }
 
-    public void resume() {
+    public void resume()
+    {
         isPaused = false;
         Cursor.visible = false;
         Time.timeScale = 1f;
+        if (FindObjectOfType<AirManager>() != null) FindObjectOfType<AirManager>().Init2();
     }
 
     private void OnDestroy() {

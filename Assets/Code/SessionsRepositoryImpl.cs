@@ -31,7 +31,7 @@ public class SessionsRepositoryImpl : ISessionsRepository {
         if (sesstionId > 0) {
             return getSessionById(sesstionId);
         } else {
-            Session session = new Session(cahce.getInt(CacheKeys.AIRPLANE_ID, 1), cahce.getInt(CacheKeys.ENVIRONMENT_ID, 1), "new sesstion", new GameState(int.MaxValue, cahce.getInt(CacheKeys.DIFFICULTY, 1), 0, 0));
+            Session session = new Session(cahce.getInt(CacheKeys.AIRPLANE_ID, 1), cahce.getInt(CacheKeys.ENVIRONMENT_ID, 1), "new sesstion", new GameStatest(int.MaxValue, cahce.getInt(CacheKeys.DIFFICULTY, 1), 0, 0));
             return Task.Run(() => {
                 return session;
             });

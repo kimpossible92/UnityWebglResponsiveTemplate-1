@@ -15,20 +15,20 @@ public class AirplaneSounds : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        if (Input.GetKey(InputManager.geyKey(Key.BOOST))) {
-            targetPitch = highestPitchValue;
-        } else {
-            targetPitch = lessPitchValue;
-        }
-        if (boostAudioSource != null)
-            boostAudioSource.pitch = Mathf.Lerp(boostAudioSource.pitch, targetPitch, incrementPitch * Time.deltaTime);
-        if (gunAudioSource != null) {
-            if (Input.GetKeyDown(InputManager.geyKey(Key.BASIC_FIRE))) {
-                gunAudioSource.Play();
-            }
-            if (Input.GetKeyUp(InputManager.geyKey(Key.BASIC_FIRE))) {
-                gunAudioSource.Stop();
-            }
-        }
+        //if (Input.GetKey(InputManager.geyKey(Key.BOOST))) {
+        //    targetPitch = highestPitchValue;
+        //} else {
+        //    targetPitch = lessPitchValue;
+        //}
+        //if (boostAudioSource != null)
+        //    boostAudioSource.pitch = Mathf.Lerp(boostAudioSource.pitch, targetPitch, incrementPitch * Time.deltaTime);
+        //if (gunAudioSource != null) {
+        //    if (Input.GetKeyDown(InputManager.geyKey(Key.BASIC_FIRE))) {
+        //        gunAudioSource.Play();
+        //    }
+        //    if (Input.GetKeyUp(InputManager.geyKey(Key.BASIC_FIRE))) {
+        //        gunAudioSource.Stop();
+        //    }
+        //}
     }
 }

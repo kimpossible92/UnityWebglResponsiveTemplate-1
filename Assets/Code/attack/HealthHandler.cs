@@ -14,6 +14,7 @@ public class HealthHandler : MonoBehaviour {
 
     [HideInInspector]
     public bool isDead { private set; get; } = false;
+    public void setDead(bool _dead) { isDead = _dead; }
 
     public Action onDead;
 
@@ -22,19 +23,21 @@ public class HealthHandler : MonoBehaviour {
 
     // Start is called before the first frame update
     void Start() {
-
+        isDead  = false;
     }
 
     // Update is called once per frame
     void Update() {
-        if (currentHealth <= 0f && !isDead) {
+        if (currentHealth <= 0f ){
             if (onDead != null) {
                 if (deadExplosion != null) {
                     GameObject explosion = Instantiate(deadExplosion, transform.position, transform.rotation);
                     Destroy(explosion.gameObject, deadExplosionTime);
                 }
-                isDead = true;
                 onDead.Invoke();
+                FindObjectOfType<Pausestart>().pause();
+               // isDead = true;
+                
             }
         }
     }
@@ -47,6 +50,11 @@ public class HealthHandler : MonoBehaviour {
 
     public void takdeDamage(float damage) {
         currentHealth -= damage;
+        currentHealth = Mathf.Clamp(currentHealth, 0f, currentHealth);
+    }
+    public void plusLive(float plus)
+    {
+        currentHealth += plus;
         currentHealth = Mathf.Clamp(currentHealth, 0f, currentHealth);
     }
 

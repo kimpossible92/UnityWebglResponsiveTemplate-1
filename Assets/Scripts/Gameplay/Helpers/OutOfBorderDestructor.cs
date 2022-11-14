@@ -16,7 +16,7 @@ public class OutOfBorderDestructor : MonoBehaviour
     
     private void CheckBorders()
     {
-        if(!GameAreaHelper.IsInGameplayArea(transform, _representation.bounds))
+        if (!GameAreaHelper.IsInGameplayArea(transform, _representation.bounds))
         {
             Destroy(gameObject);
         }

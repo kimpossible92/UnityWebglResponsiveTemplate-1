@@ -9,9 +9,9 @@ public class Session {
     public int airplaneId;
     public int environmentId;
     public string sessionName;
-    public GameState gameState;
+    public GameStatest gameState;
 
-    public Session(int airplaneId, int environmentId, string sessionName, GameState gameState) {
+    public Session(int airplaneId, int environmentId, string sessionName, GameStatest gameState) {
         this.id = DateTime.Now.Millisecond;
         this.airplaneId = airplaneId;
         this.environmentId = environmentId;
@@ -22,13 +22,13 @@ public class Session {
 }
 
 [Serializable]
-public class GameState {
+public class GameStatest {
     public float health;
     public int difficultyLevel;
     public int coins;
     public int score;
 
-    public GameState(float health, int difficultyLevel, int coins, int score) {
+    public GameStatest(float health, int difficultyLevel, int coins, int score) {
         this.health = health;
         this.difficultyLevel = difficultyLevel;
         this.coins = coins;
@@ -66,7 +66,7 @@ public class AirManager : MonoBehaviour {
 
     private Airplane airplane;
     private Airplane.AirplaneAttributes airplaneAttributes;
-    private GameState gameState;
+    private GameStatest gameState;
     private HealthHandler healthHandler;
     [HideInInspector] private Vector3 startedpos;
     public bool isDead { private set; get; } = false;
@@ -81,6 +81,21 @@ public class AirManager : MonoBehaviour {
     {
         startedpos = transform.position;
     }
+    private void Update()
+    {
+        if (transform.position.z > 2940)
+        {
+            transform.position = startedpos;
+        }
+        if (transform.position.x >= 14)
+        {
+            transform.position = new Vector3(startedpos.x,transform.position.y,transform.position.z);
+        }
+        if(transform.position.x <= -14)
+        {
+            transform.position = new Vector3(startedpos.x, transform.position.y, transform.position.z);
+        }
+    }
 
     private void initAirplane() {
         GetComponent<AirMove>().setSpeedValues(airplaneAttributes.speed, airplaneAttributes.minSpeed, airplaneAttributes.maxSpeed);
@@ -88,11 +103,20 @@ public class AirManager : MonoBehaviour {
         GetComponent<AirScore>().setData(gameState.score, gameState.coins);
         healthHandler.setHealth(airplaneAttributes.maxHealth, gameState.health);
         healthHandler.onDead = () => {
+            //print(isDead);
             isDead = true;
             airplaneDead();
         };
     }
-
+    public void Init2()
+    {
+        if (isDead)
+        {
+            initAirplane();
+            //print("resume");
+            isDead = false;
+        }
+    }
     private void airplaneDead() {
         EventBus<AirplaneDeadEvent>.getInstance().publish(new AirplaneDeadEvent(airplane));
         transform.position = startedpos;
@@ -100,7 +124,7 @@ public class AirManager : MonoBehaviour {
     }
 
     // Called from Gamestart
-    public void setAirplane(Airplane airplane, GameState gameState) {
+    public void setAirplane(Airplane airplane, GameStatest gameState) {
         this.airplane = airplane;
         this.airplaneAttributes = airplane.attributes;
         this.gameState = gameState;
@@ -121,11 +145,44 @@ public class AirManager : MonoBehaviour {
         Collider collider = collision.collider;
         BaseFire fire = collider.GetComponent<BaseFire>();
         if (fire != null && !fire.createdBy.CompareTag(gameObject.tag)) {
-            healthHandler.takdeDamage(fire.damage);
+            //healthHandler.takdeDamage(fire.damage);
         }
         if (collider.CompareTag("Terrain")) {
             healthHandler.takdeDamage(10f);
+            transform.position = new Vector3(transform.position.x, startedpos.y, transform.position.z);
         }
+        if (collider.CompareTag("enemy"))
+        {
+            healthHandler.takdeDamage(10f);
+            transform.position = new Vector3(transform.position.x, startedpos.y, transform.position.z);
+        }
+        if (healthHandler.currentHealth <= 0)
+        {
+
+        }
+        if (collider.CompareTag("bonus"))
+        {
+            if (collider.GetComponent<Gameplay.Spaceships.Spaceship>() != null)
+            {
+                if (collider.GetComponent<Gameplay.Spaceships.Spaceship>().bonusRead == 0)
+                {
+                    healthHandler.plusLive(20f);Destroy(collider.gameObject);
+                }
+                if (collider.GetComponent<Gameplay.Spaceships.Spaceship>().bonusRead == 1)
+                {
+                    healthHandler.plusLive(40f); Destroy(collider.gameObject);
+                }
+                if (collider.GetComponent<Gameplay.Spaceships.Spaceship>().bonusRead == 2)
+                {
+                    healthHandler.plusLive(60f); Destroy(collider.gameObject);
+                }
+                else
+                {
+                    healthHandler.plusLive(60f); Destroy(collider.gameObject);
+                }
+            }
+        }
+    
     }
 }
 public class EnemyDeadEvent : GameEvent {

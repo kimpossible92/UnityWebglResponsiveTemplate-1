@@ -20,7 +20,7 @@ public class AirScore : MonoBehaviour {
     void Update() {
 
     }
-
+    public void setMyScore(int sc) { this.score += sc; }
     public void setData(int score, int coins) {
         this.score = score;
         this.coins = coins;

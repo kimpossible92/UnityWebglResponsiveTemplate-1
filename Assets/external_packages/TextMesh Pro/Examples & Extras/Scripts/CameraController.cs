@@ -45,6 +45,7 @@ namespace TMPro.Examples
         // Controls for Touches on Mobile devices
         //private float prev_ZoomDelta;
 
+        Camera cam;
 
         private const string event_SmoothingValue = "Slider - Smoothing Value";
         private const string event_FollowDistance = "Slider - Camera Zoom";
@@ -198,9 +199,8 @@ namespace TMPro.Examples
                 // Check for left mouse button to select a new CameraTarget or to reset Follow position
                 if (Input.GetMouseButton(0))
                 {
-                    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                     RaycastHit hit;
-
+                    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                     if (Physics.Raycast(ray, out hit, 300, 1 << 10 | 1 << 11 | 1 << 12 | 1 << 14))
                     {
                         if (hit.transform == CameraTarget)

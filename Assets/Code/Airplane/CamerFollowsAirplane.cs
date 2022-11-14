@@ -21,8 +21,8 @@ public class CamerFollowsAirplane : MonoBehaviour {
             return;
         }
 
-        Vector3 moveCamerTo = airplane.transform.position
-            - airplane.transform.forward * cameraOffset // distance offset
+        Vector3 moveCamerTo = (airplane.transform.position)
+            - airplane.transform.right * cameraOffset // distance offset
             + Vector3.up * cameraHeightOffset; // height offset
 
         transform.position = moveCamerTo;

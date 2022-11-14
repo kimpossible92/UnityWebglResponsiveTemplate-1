@@ -9,10 +9,10 @@ public abstract class AirPlane : MonoBehaviour
     {
         ProcessStart();
     }
-
     // Update is called once per frame
     void Update()
     {
+        ProcessHandle();
         ProcessAttack();
     }
     protected abstract void ProcessStart();
@@ -20,6 +20,6 @@ public abstract class AirPlane : MonoBehaviour
     protected abstract void ProcessHandle();
     void FixedUpdate()
     {
-        ProcessHandle();
+        //ProcessHandle();
     }
 }

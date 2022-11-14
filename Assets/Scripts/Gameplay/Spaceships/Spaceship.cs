@@ -45,8 +45,24 @@ namespace Gameplay.Spaceships
         [SerializeField] int scoreenemy = 200;
         public void ApplyDamage(IDamageDealer damageDealer)
         {
-            //print(damageDealer.Damage);
-            
+            if (GetComponent<EnemyShipController>() != null) { return; }
+            lvllive -= damageDealer.Damage;
+            if (lvllive <= 0)
+            {
+                int randBonus = UnityEngine.Random.Range(0, 5);
+                if (randBonus == 0) { 
+                    tag = "bonus"; 
+                    bonustype = UnityEngine.Random.Range(0, bonusSprites.Length); 
+                    gameObject.transform.Find("Hull").GetComponent<SpriteRenderer>().sprite = bonusSprites[bonustype]; 
+                }
+                else { 
+                    //FindObjectOfType<UIPlay>().addScore(scoreenemy); 
+                    FindObjectOfType<AirScore>().setMyScore(scoreenemy); 
+                    GetComponent<EnemySp>().GetSpawner.lvlplus(); 
+                    GetComponent<EnemySp>().GetSpawner.setNewShip(false);
+                    Destroy(gameObject); 
+                }
+            }
         }
     }
 }

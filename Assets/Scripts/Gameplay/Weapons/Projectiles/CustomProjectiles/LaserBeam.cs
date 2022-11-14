@@ -42,6 +42,6 @@ public class LaserBeam : ProjectilePool
     }
     protected override void Move(float speed)
     {
-        transform.Translate(speed * Time.deltaTime * Vector3.up);
+        transform.Translate(speed * Time.deltaTime * Vector3.back);
     }
 }

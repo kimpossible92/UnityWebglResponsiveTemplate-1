@@ -52,15 +52,21 @@ public class AirMove : AirPlane
         controller.Move(direction * (airplaneSpeed + (airplaneSpeed > 0f  ? boostValue : 0f)) * Time.deltaTime);
     }
 
-
+    float horizontal = 0;
     private void handleRotatoin() {
         // Rotation
         int interpolate = 1;
         if (is_interpolate) interpolate = -1;
-        float horizontal = Input.GetAxis("Horizontal");
-        float vertical = interpolate*Input.GetAxis("Vertical");
-
-        pitch += vertical * rotateSpeed * Time.deltaTime;
+        float vertical = 0;
+        #region vertical_rotation
+        if (Input.GetMouseButton(0)){ 
+            vertical = 1f;
+        }
+        else { 
+            vertical =-1f;
+        }
+            #endregion
+        pitch += (-vertical) * rotateSpeed * Time.deltaTime;
         yaw += horizontal * rotateSpeed * Time.deltaTime;
         roll += horizontal;
         if (horizontal == 0.0f) {

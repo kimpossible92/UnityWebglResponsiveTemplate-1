@@ -120,15 +120,15 @@ public class CollShip : MonoBehaviour
         if (!showGUI)
             return;
         DisplayLifeCount();
-        if (dead) StaticMenu._winOrloseText.text = Level.ToString() + "lose";
-        else StaticMenu._winOrloseText.text = Level.ToString();
+        if (dead) { }
+        else { }
     }
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "enemy")
         {
             #region old1
-            life -= (int)100;
+            life -= (int)20;
             if (life <= 0)
             {
                 dead = true;
@@ -136,17 +136,11 @@ public class CollShip : MonoBehaviour
             isInvincible = true;
             timeSpentInvincible = 0;
             #endregion
-
-
         }
         if (collision.gameObject.tag == "bonus")
         {
             collision.gameObject.SetActive(false);
             bonusScore += 1;
-        }
-        if (collision.gameObject.tag == "powerup")
-        {
-            NewLevelLoad(collision.gameObject);
         }
     }
     public void NewLevelLoad(GameObject FinishGO)
@@ -154,11 +148,8 @@ public class CollShip : MonoBehaviour
         setStop(true);
         Level = PlayerPrefs.GetInt("Level");
         Level += 1;
-        //transform.position = FinishGO.transform.position + Vector3.forward;
         startpos1 = transform.position;
         Rotstart = transform.rotation;
-        //GetComponent<NWH.VehiclePhysics2.PlayerSpaceships2>().RotZero();
-        GameObject.Find("Status").transform.Find("Canvas2").transform.Find("Button").gameObject.SetActive(true);
 
         //PlayerPrefs.SetInt("Level", Level);
     }

@@ -12,7 +12,7 @@ public class Main : MonoBehaviour {
 	private bool  canFire = false;
 	private int   ballDropCount= 0;
 	
-	enum GameState{
+	enum GameState2{
 		INIT,
 		READY,
 		FIRE,
@@ -20,7 +20,7 @@ public class Main : MonoBehaviour {
 		RESET,
 		RESET2,
 	};
-	GameState _gameState = GameState.INIT;
+	GameState2 _gameState = GameState2.INIT;
 	
 	
 	// Use this for initialization
@@ -32,23 +32,23 @@ public class Main : MonoBehaviour {
 		Animator animator;
 		AnimatorStateInfo stateInfo;
 		
-		if(_gameState ==  GameState.INIT)
+		if(_gameState ==  GameState2.INIT)
 		{
 		
 			if(Input.GetMouseButtonUp(0))
 			{
 				if(control.isEnd())
 				{
-					_gameState = GameState.RESET;
+					_gameState = GameState2.RESET;
 					control.reset();
 				}
 				else
 				{
-					_gameState = GameState.BALL_SET;
+					_gameState = GameState2.BALL_SET;
 				}
 			}
 		}
-		else if(_gameState == GameState.READY) 
+		else if(_gameState == GameState2.READY) 
 		{
 			if(canFire)
 			{
@@ -67,36 +67,36 @@ public class Main : MonoBehaviour {
 				if(Input.GetMouseButtonUp(0))
 				{
 					control.push((int)firePower* 3);
-					_gameState = GameState.FIRE;
+					_gameState = GameState2.FIRE;
 					fireWaitTime = 0.0f;
 					isPowerAdd = false;
 					canFire= false;
 				}
 			}
 		}
-		else if(_gameState == GameState.BALL_SET)
+		else if(_gameState == GameState2.BALL_SET)
 		{
 			control.setBall();
-			_gameState = GameState.READY;
+			_gameState = GameState2.READY;
 		}
-		else if(_gameState ==  GameState.FIRE)
+		else if(_gameState ==  GameState2.FIRE)
 		{
 		}
-		else if(_gameState ==  GameState.RESET)
+		else if(_gameState ==  GameState2.RESET)
 		{
 			animator  = table.GetComponent<Animator>();
       animator.SetTrigger("open");
       ballDropCount = 0;
-			_gameState = GameState.RESET2;
+			_gameState = GameState2.RESET2;
 		}
-		else if(_gameState ==  GameState.RESET2)
+		else if(_gameState ==  GameState2.RESET2)
 		{
 		}
 	}
 	
 	void OnGUI()
 	{
-		if(_gameState == GameState.READY)
+		if(_gameState == GameState2.READY)
 		{
 			  GUI.Label(new Rect(10, 10, 100, 20), "Power:" + (int)firePower);
 		}
@@ -104,28 +104,28 @@ public class Main : MonoBehaviour {
 	
 	public void send(string tag)
 	{
-		if(_gameState == GameState.READY ||
-			_gameState == GameState.FIRE) 
+		if(_gameState == GameState2.READY ||
+			_gameState == GameState2.FIRE) 
 		{
 			if(tag.Equals("ballInit"))
 			{
 				canFire = true;
 				
-				_gameState = GameState.READY;
+				_gameState = GameState2.READY;
 			}
 		}
 		
-		if(_gameState ==  GameState.FIRE)
+		if(_gameState ==  GameState2.FIRE)
 		{
 			if(tag.Equals("ballEnd"))
 			{
 				control.nextBall();
-				_gameState = GameState.INIT;
+				_gameState = GameState2.INIT;
 				canFire = false;
 			}
 		}
 		
-		if(_gameState == GameState.RESET2)
+		if(_gameState == GameState2.RESET2)
 		{
 			if(tag.Equals("ballBack"))
 			{
@@ -135,7 +135,7 @@ public class Main : MonoBehaviour {
 					Animator animator  = table.GetComponent<Animator>();
 					//stateInfo = animator.GetCurrentAnimatorStateInfo(0);
 					animator.SetBool(Animator.StringToHash("isOpen"), false);
-					_gameState = GameState.INIT;
+					_gameState = GameState2.INIT;
 				}
 			}
 		}

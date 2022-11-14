@@ -35,7 +35,7 @@ namespace Gameplay.Weapons.Projectiles
 
         private void Update()
         {
-            Move(_speed);
+            if(GetComponent<BulletFire>()==null)Move(_speed);
         }
 
         

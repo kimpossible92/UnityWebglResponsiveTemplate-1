@@ -13,11 +13,11 @@ public class Gamestart : MonoBehaviour,GameplayView
     private Airplane airplane;
     private Difficulty currentDifficulty;
 
-    private GameState stateToSave; // use it to update the info after destroying the airplane
+    private GameStatest stateToSave; // use it to update the info after destroying the airplane
 
     private Terrain terrainObject;
     private GameObject airplaneObject;
-    public Vector3 airplaneStartPosition = new Vector3(0, 50, 0);
+    public Vector3 airplaneStartPosition = new Vector3(0, 180, 0);
     public GameObject finishMenu, connectoinErrorMenu;
 
     private Observer<AirplaneDeadEvent> airplaneDeadObserver;
@@ -34,15 +34,15 @@ public class Gamestart : MonoBehaviour,GameplayView
 
     private void init() {
         presenter.getAirplane(currentSession.airplaneId);
-        if (terrainObject == null) {
-            terrainObject = Instantiate(TerrainLoad.GetComponent<Terrain>(), Vector3.zero, Quaternion.identity) as Terrain;
-        }
+        //if (terrainObject == null) {
+        //    terrainObject = Instantiate(TerrainLoad.GetComponent<Terrain>(), Vector3.zero, Quaternion.identity) as Terrain;
+        //}
         airplaneObject = Instantiate(AirplaneLoad, airplaneStartPosition, Quaternion.identity) as GameObject;
         airplaneObject.GetComponent<AirManager>().setAirplane(airplane, currentSession.gameState);
         pushDifficulty((Difficulty) currentSession.gameState.difficultyLevel);
         airplaneDeadObserver = (airplane) => {
             AirScore airplaneScore = airplaneObject.GetComponent<AirScore>();
-            stateToSave = new GameState(0f, currentSession.gameState.difficultyLevel, airplaneScore.coins, airplaneScore.score);
+            stateToSave = new GameStatest(0f, currentSession.gameState.difficultyLevel, airplaneScore.coins, airplaneScore.score);
             presenter.update(stateToSave.score, stateToSave.coins);
         };
         enemyDeadObserver = (enemy) => {
@@ -61,7 +61,7 @@ public class Gamestart : MonoBehaviour,GameplayView
             if (airplaneManager != null) {
                 float health = airplaneManager.getCurrentHealth();
                 int score = airplaneManager.getCurrentScore();
-                Session session = new Session(currentSession.airplaneId, currentSession.environmentId, DateTime.Now.ToString(), new GameState(health, (int) currentDifficulty, 0, score));
+                Session session = new Session(currentSession.airplaneId, currentSession.environmentId, DateTime.Now.ToString(), new GameStatest(health, (int) currentDifficulty, 0, score));
                 return session;
             }
             return null;
