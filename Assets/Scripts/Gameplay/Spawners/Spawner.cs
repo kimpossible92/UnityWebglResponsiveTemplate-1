@@ -72,7 +72,7 @@ namespace Gameplay.Spawners
                         if (level >= 8) { enem.GetComponent<Spaceships.Spaceship>().setlive(200f); enem.GetComponent<Gameplay.ShipSystems.WeaponSystem>().setRocketOrBeam(); }
                         else if (level >= 16) { enem.GetComponent<Spaceships.Spaceship>().setlive(300f); enem.GetComponent<Gameplay.ShipSystems.WeaponSystem>().setBeam(); }
                         else if (level >= 21) { enem.GetComponent<Spaceships.Spaceship>().setlive(400f); enem.GetComponent<Gameplay.ShipSystems.WeaponSystem>().setBeam(); }
-                        else { enem.GetComponent<Spaceships.Spaceship>().setlive(1f); }
+                        else { enem.GetComponent<Spaceships.Spaceship>().setlive(100f); }
                     }
                     else { level = 0; }
                     enem.GetComponent<EnemySp>().GetSpawner = this;

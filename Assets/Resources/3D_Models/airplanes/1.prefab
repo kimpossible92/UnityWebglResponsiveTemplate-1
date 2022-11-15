@@ -11233,6 +11233,7 @@ MonoBehaviour:
   minSpeed: 60
   speedAcceleration: 3
   rotateSpeed: 20
+  slojnost: 1
   is_interpolate: 1
   minRollAngle: -45
   maxRollAngle: 45
@@ -11435,6 +11436,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 901a1a3ccb1ca7342b29aa4798c79183, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  slojnost: 0
 --- !u!114 &6542043373090301878
 MonoBehaviour:
   m_ObjectHideFlags: 0

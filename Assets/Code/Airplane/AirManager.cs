@@ -62,9 +62,14 @@ public class Airplane {
         public float basicDamage;
     }
 }
+public enum slojnost2
+{
+    easy=1,med=2,hard=3
+}
 public class AirManager : MonoBehaviour {
 
     private Airplane airplane;
+   
     private Airplane.AirplaneAttributes airplaneAttributes;
     private GameStatest gameState;
     private HealthHandler healthHandler;
@@ -80,10 +85,11 @@ public class AirManager : MonoBehaviour {
     private void Start()
     {
         startedpos = transform.position;
+        live = PlayerPrefs.GetInt("live1");
     }
     private void Update()
     {
-        if (transform.position.z > 2940)
+        if (transform.position.z > 3440)
         {
             transform.position = startedpos;
         }
@@ -107,19 +113,35 @@ public class AirManager : MonoBehaviour {
             isDead = true;
             airplaneDead();
         };
+    }int live = 0;
+    private void OnApplicationQuit()
+    {
+        PlayerPrefs.SetInt("live1", live);
+        PlayerPrefs.Save();
+    }
+    private void OnGUI()
+    {
+        GUIStyle style = new GUIStyle();
+        style.fontSize = 30;
+        style.fontStyle = FontStyle.Bold;
+        style.normal.textColor = Color.yellow;
+        Rect lifeIconRect = new Rect(10, 150, 32, 32);
+        Rect labelRect = new Rect(lifeIconRect.xMax + 10, lifeIconRect.y, 60, 32);
+        GUI.Label(labelRect, live.ToString(), style);
     }
     public void Init2()
     {
         if (isDead)
         {
             initAirplane();
+            live++;
             //print("resume");
             isDead = false;
         }
     }
     private void airplaneDead() {
         EventBus<AirplaneDeadEvent>.getInstance().publish(new AirplaneDeadEvent(airplane));
-        transform.position = startedpos;
+        //transform.position = startedpos;
         initAirplane();
     }
 

@@ -1432,6 +1432,7 @@ MonoBehaviour:
   - {fileID: 100006, guid: 18e45964d090c2a48bcfe78224c945ea, type: 3}
   - {fileID: 100006, guid: f8842601e1746c5428daa822630c8e9f, type: 3}
   - {fileID: 5486830460278975565, guid: 51754cea3c47e5b4abcddf8f8d9c29c1, type: 3}
+  - {fileID: 3382101272080266095, guid: 0b4bf6a555b3c7442911e9f14d628f22, type: 3}
   timeMin: 1
   timeMax: 2.5
 --- !u!4 &906839455
@@ -1738,6 +1739,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114960326724290942, guid: 0f618da174ea44266865b50a04995f3c,
         type: 3}
+      propertyPath: loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114960326724290942, guid: 0f618da174ea44266865b50a04995f3c,
+        type: 3}
       propertyPath: sound
       value: 
       objectReference: {fileID: 8300000, guid: 34ae96b3c92b44cebbdf3c3444d0204e, type: 3}
@@ -1749,12 +1755,22 @@ PrefabInstance:
     - target: {fileID: 114960326724290942, guid: 0f618da174ea44266865b50a04995f3c,
         type: 3}
       propertyPath: autoPlay
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114960326724290942, guid: 0f618da174ea44266865b50a04995f3c,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114960326724290942, guid: 0f618da174ea44266865b50a04995f3c,
         type: 3}
       propertyPath: maxVolume
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114960326724290942, guid: 0f618da174ea44266865b50a04995f3c,
+        type: 3}
+      propertyPath: controlsTitle
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f618da174ea44266865b50a04995f3c, type: 3}
@@ -2415,6 +2431,11 @@ PrefabInstance:
     - target: {fileID: 4074902142343532, guid: 0f618da174ea44266865b50a04995f3c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82660860377247234, guid: 0f618da174ea44266865b50a04995f3c,
+        type: 3}
+      propertyPath: Mute
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f618da174ea44266865b50a04995f3c, type: 3}

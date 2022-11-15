@@ -68,6 +68,14 @@ public class EnemyShipController : ShipController
     [HideInInspector] int randInt;
     protected override void ProcessHandling(MovementSystem movementSystem)
     {
+        if (GetComponent<EnemySp>().GetSpawner!=null)
+        {
+            if (transform.position.z < GetComponent<EnemySp>().GetSpawner.transform.position.z - 250) { transform.position = GetComponent<EnemySp>().GetSpawner.transform.position; }
+        }
+        if (GetComponent<EnemySp>().GetSpawner2 != null)
+        {
+            if (transform.position.z < GetComponent<EnemySp>().GetSpawner2.transform.position.z - 250) { transform.position = GetComponent<EnemySp>().GetSpawner2.transform.position; }
+        }
         if (anotherMovement == 1) {
             controller.Move(Vector3.back * (speed + (speed > 0f ? 10 : 0)) * Time.deltaTime);
             //movementSystem.LateralMovement(Time.deltaTime); 

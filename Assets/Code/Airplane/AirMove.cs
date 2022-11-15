@@ -13,6 +13,7 @@ public class AirMove : AirPlane
     public float minSpeed = 60f;
     public float speedAcceleration = 3f;
     public float rotateSpeed = 20f;
+    [SerializeField] private slojnost2 slojnost;
     [SerializeField] private bool is_interpolate;
     private float boostValue;
     
@@ -49,7 +50,7 @@ public class AirMove : AirPlane
         Vector3 direction = transform.forward.normalized;
         airplaneSpeed -= transform.forward.y * speedAcceleration * Time.deltaTime;
         airplaneSpeed = Mathf.Clamp(airplaneSpeed, minSpeed, maxSpeed);
-        controller.Move(direction * (airplaneSpeed + (airplaneSpeed > 0f  ? boostValue : 0f)) * Time.deltaTime);
+        controller.Move(direction * (((int)slojnost*airplaneSpeed) + (airplaneSpeed > 0f  ? boostValue : 0f)) * Time.deltaTime);
     }
 
     float horizontal = 0;
