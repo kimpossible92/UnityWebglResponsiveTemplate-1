@@ -23,7 +23,7 @@ namespace Gameplay.Spaceships
         private UnitBattleIdentity _battleIdentity;
 
         [SerializeField]
-        private float lvllive=1;
+        private float lvllive=100;
         protected int bonustype = 0;
         public  int bonusRead => bonustype;
         public MovementSystem MovementSystem => _movementSystem;
@@ -45,8 +45,9 @@ namespace Gameplay.Spaceships
         [SerializeField] int scoreenemy = 200;
         public void ApplyDamage(IDamageDealer damageDealer)
         {
-            if (GetComponent<EnemyShipController>() != null) { return; }
+            //if (GetComponent<EnemyShipController>() != null) { return; }
             lvllive -= damageDealer.Damage;
+            //print(damageDealer.Damage);
             if (lvllive <= 0)
             {
                 int randBonus = UnityEngine.Random.Range(0, 5);
@@ -57,9 +58,17 @@ namespace Gameplay.Spaceships
                 }
                 else { 
                     //FindObjectOfType<UIPlay>().addScore(scoreenemy); 
-                    FindObjectOfType<AirScore>().setMyScore(scoreenemy); 
-                    GetComponent<EnemySp>().GetSpawner.lvlplus(); 
-                    GetComponent<EnemySp>().GetSpawner.setNewShip(false);
+                    FindObjectOfType<AirScore>().setMyScore(scoreenemy);
+                    if (GetComponent<EnemySp>().GetSpawner != null)
+                    {
+                        GetComponent<EnemySp>().GetSpawner.lvlplus();
+                        GetComponent<EnemySp>().GetSpawner.setNewShip(false);
+                    }
+                    if (GetComponent<EnemySp>().GetSpawner2 != null)
+                    {
+                        GetComponent<EnemySp>().GetSpawner2.lvlplus();
+                        GetComponent<EnemySp>().GetSpawner2.setNewShip(false);
+                    }
                     Destroy(gameObject); 
                 }
             }

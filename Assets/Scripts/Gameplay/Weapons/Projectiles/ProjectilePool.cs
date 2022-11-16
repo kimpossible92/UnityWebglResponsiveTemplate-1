@@ -18,7 +18,7 @@ namespace Gameplay.Weapons.Projectiles
         [SerializeField] 
         private float _damage;
 
-
+        [SerializeField]
         private UnitBattleIdentity _battleIdentity;
 
 
@@ -45,8 +45,10 @@ namespace Gameplay.Weapons.Projectiles
             var damagableObject = other.gameObject.GetComponent<IDamagable>();
             
             if (damagableObject != null 
-                && damagableObject.BattleIdentity != BattleIdentity && other.gameObject.tag !="bonus")
-            {
+                //&& damagableObject.BattleIdentity != BattleIdentity 
+                && other.gameObject.tag !="bonus")
+            {            
+                //print("Dest");
                 damagableObject.ApplyDamage(this);
             }
         }

@@ -36,7 +36,12 @@ namespace Gameplay.ShipControllers
             {
                 destTime += Time.deltaTime;
                 //print(destTime);
-                if (destTime >= 6.5f) { print("destroy"); Destroy(this.gameObject); destTime = 0; }
+                if (destTime >= 6.5f)
+                {
+                    GetComponent<EnemySp>().GetSpawner.lvlplus();
+                    GetComponent<EnemySp>().GetSpawner.setNewShip(false);
+                    Destroy(this.gameObject); destTime = 0; 
+                }
             }
         }
         private void OnCollisionEnter(Collision collision) 

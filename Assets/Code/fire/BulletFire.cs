@@ -16,6 +16,14 @@ public class BulletFire : BaseFire
     public float Damage => _damage;
     private void Start() {
     }
+    private void Update()
+    {
+        if (transform.position.z > FindObjectOfType<AirManager>().transform.position.z + 250)
+        {
+
+            Destroy(gameObject);
+        }
+    }
 
     void OnCollisionEnter(Collision collision)
     {
