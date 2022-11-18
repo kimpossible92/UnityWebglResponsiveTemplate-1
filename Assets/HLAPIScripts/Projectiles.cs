@@ -137,21 +137,21 @@ public class Projectiles : NetworkBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.x < -25)
+        if (transform.position.x < -17)
         {
-            transform.position = new Vector3(25, transform.position.y, transform.position.z);
+            transform.position = new Vector3(17, transform.position.y, transform.position.z);
         }
-        if (transform.position.x > 25)
+        if (transform.position.x > 17)
         {
-            transform.position = new Vector3(-25, transform.position.y, transform.position.z);
+            transform.position = new Vector3(-17, transform.position.y, transform.position.z);
         }
-        if (transform.position.y < -25)
+        if (transform.position.y < -17)
         {
-            transform.position = new Vector3(transform.position.x, 25, transform.position.z);
+            transform.position = new Vector3(transform.position.x, 17, transform.position.z);
         }
-        if (transform.position.y > 25)
+        if (transform.position.y > 17)
         {
-            transform.position = new Vector3(transform.position.x, -25, transform.position.z);
+            transform.position = new Vector3(transform.position.x, -17, transform.position.z);
         }
         if (!isLocalPlayer)
             return;
@@ -213,6 +213,12 @@ public class Projectiles : NetworkBehaviour
         {
             mDirection = Vector2.zero;
         }
+        if (Input.GetMouseButton(0))
+        {
+            newHead = 3;
+        }
+        else if (Input.GetMouseButton(1)) { newHead = 4; }
+        else { newHead = 1; }
     }
     GameObject serverGame;
     NetworkConnection connectingToServer;

@@ -52,7 +52,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7481675834733013174}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -279,7 +279,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 77e9794abb187e44a8004e914e4251a6,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.31
+      value: -1.16
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 77e9794abb187e44a8004e914e4251a6,
         type: 3}
@@ -336,6 +336,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 7096cb5b7b641444190e2455364afe5f, type: 2}
+    - target: {fileID: 5399130895849029771, guid: 77e9794abb187e44a8004e914e4251a6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.157
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77e9794abb187e44a8004e914e4251a6, type: 3}
 --- !u!4 &7654760119501560928 stripped

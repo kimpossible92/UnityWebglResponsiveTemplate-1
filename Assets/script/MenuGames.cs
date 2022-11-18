@@ -18,6 +18,10 @@ namespace Assets.script
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene("Demo");
         }
+        public void setGame4()
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("inGame");
+        }
         // Use this for initialization
         void Start()
         {

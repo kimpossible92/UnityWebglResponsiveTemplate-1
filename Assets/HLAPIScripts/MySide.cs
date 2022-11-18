@@ -103,13 +103,13 @@ public class MySide : NetworkBehaviour {
         get;
         set;
     }
-    [Client]
-    public override void OnStartLocalPlayer()
-    {
-        base.OnStartLocalPlayer();
-        clients = this;
-        SyncPlayer();//
-    }
+    //[Client]
+    //public override void OnStartLocalPlayer()
+    //{
+    //    base.OnStartLocalPlayer();
+    //    clients = this;
+    //    SyncPlayer();//
+    //}
     public override void OnNetworkDestroy()
     {
         base.OnNetworkDestroy();
