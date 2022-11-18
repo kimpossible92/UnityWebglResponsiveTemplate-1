@@ -56,22 +56,25 @@ public class Gamestart : MonoBehaviour,GameplayView
         EventBus<DifficultyChangedEvent>.getInstance().publish(new DifficultyChangedEvent(difficulty));
     }
     public void saveGame() {
-        Session getSession() {
+        Session getSession()
+        {
             AirManager airplaneManager = airplaneObject.GetComponent<AirManager>();
-            if (airplaneManager != null) {
+            if (airplaneManager != null)
+            {
                 float health = airplaneManager.getCurrentHealth();
                 int score = airplaneManager.getCurrentScore();
-                Session session = new Session(currentSession.airplaneId, currentSession.environmentId, DateTime.Now.ToString(), new GameStatest(health, (int) currentDifficulty, 0, score));
+                Session session = new Session(currentSession.airplaneId, currentSession.environmentId, DateTime.Now.ToString(), new GameStatest(health, (int)currentDifficulty, 0, score));
                 return session;
             }
             return null;
         }
         Session sessionToSave = getSession();
         presenter.saveSession(sessionToSave);
+        UnityEngine.SceneManagement.SceneManager.LoadScene("menu");
     }
 
     public void quitGame() {
-        
+        UnityEngine.SceneManagement.SceneManager.LoadScene("menu");
     }
     private void changeDifficulty() {
         if (airplaneObject == null)
