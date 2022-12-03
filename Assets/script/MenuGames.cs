@@ -5,7 +5,6 @@ namespace Assets.script
 {
     public class MenuGames : MonoBehaviour
     {
-
         public void setGame1()
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene("mainGame");

@@ -29,8 +29,8 @@ public class Block : MonoBehaviour
     }
     private void Awake()
     {
-        Cube.gameObject.SetActive(false);
-        Cube2.gameObject.SetActive(false);
+        //Cube.gameObject.SetActive(false);
+        //Cube2.gameObject.SetActive(false);
     }
 
     // Update is called once per frame

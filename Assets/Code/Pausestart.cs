@@ -40,9 +40,16 @@ public class Pausestart : MonoBehaviour {
     public void resume()
     {
         isPaused = false;
+    }
+    public void setContinue()
+    {
         Cursor.visible = false;
         Time.timeScale = 1f;
         if (FindObjectOfType<AirManager>() != null) FindObjectOfType<AirManager>().Init2();
+        if (FindObjectOfType<OpLvl>() != null)
+        {
+
+        }
     }
 
     private void OnDestroy() {
