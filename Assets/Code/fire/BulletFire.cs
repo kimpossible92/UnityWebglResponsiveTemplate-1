@@ -18,9 +18,8 @@ public class BulletFire : BaseFire
     }
     private void Update()
     {
-        if (transform.position.z > FindObjectOfType<AirManager>().transform.position.z + 250)
+        if (transform.position.z > FindObjectOfType<AirManager>().transform.position.z + 170)
         {
-
             Destroy(gameObject);
         }
     }
